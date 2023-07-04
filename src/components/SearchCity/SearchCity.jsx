@@ -50,15 +50,21 @@ export const SearchCity = () => {
 					/>
 				</div>
 				{drop && (
-					<div className="bg-[#F3E59D] w-[40vw] px-4 py-2 relative z-9">
+					<div className="bg-[#F3E59D] w-[40vw] px-4 py-2 ">
 						<ul
 							className=" rounded-lg overflow-hidden "
 							name="monster"
 							id="monsters"
 						>
-							{filteredMonsters.map((monster) => (
-								<li key={monster.city} onClick={listClick}>
-									{monster.city}
+							{filteredMonsters.slice(0, 9).map((monster) => (
+								<li key={monster.city}>
+									<button
+										onClick={() => {
+											console.log("Hello");
+										}}
+									>
+										{monster.city}
+									</button>
 								</li>
 							))}
 						</ul>

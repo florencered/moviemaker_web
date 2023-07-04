@@ -1,11 +1,13 @@
-import "./App.css";
+import React from "react";
+import Services from "./components/Services";
+import './App.css';
 
 function App() {
-	return (
-		<div className="App">
-			<h1 className="text-3xl font-bold underline">Hello world!</h1>
-		</div>
-	);
+  return (
+    <div>
+      <Services />
+    </div>
+  );
 }
 
 export default App;

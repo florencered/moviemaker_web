@@ -1,5 +1,6 @@
 import React from "react";
-import DomainMain from "../components/DamainMain";
+import DomainMain from "./DomainMain";
+import "./Domain.css";
 const Domainpage = () => {
   return (
     <div className="bg-dc ">

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Act1 from "../Domain/images/Act1.jpg";
-import Act2 from "../Domain/images/Act2.jpg";
-import Act3 from "../Domain/images/Act3.jpg";
-import Anime2 from "../Domain/images/anime2.jpg";
-import Anime1 from "../Domain/images/Anime1.jpg";
-import Anime3 from "../Domain/images/anime3.jpg";
-import Raj from "../Domain/images/raj.jpg";
-import james from "../Domain/images/james.jpg";
+import Act1 from "./Domain/images/Act1.jpg";
+import Act2 from "./Domain/images/Act2.jpg";
+import Act3 from "./Domain/images/Act3.jpg";
+import Anime2 from "./Domain/images/anime2.jpg";
+import Anime1 from "./Domain/images/Anime1.jpg";
+import Anime3 from "./Domain/images/anime3.jpg";
+import Raj from "./Domain/images/raj.jpg";
+import james from "./Domain/images/james.jpg";
 
 function Post({ selectedValue }) {
   const [isLiked, setIsLiked] = useState(false);

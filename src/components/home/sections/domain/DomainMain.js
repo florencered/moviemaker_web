@@ -21,20 +21,20 @@ const DamainMain = () => {
   };
   return (
     <div className="flex-col relative h-max text-black px-4 mx-20">
-      <div className="text-white  text-y text-xl mx-10 font-bold"> Home</div>
+      <div className="text-white  text-y text-2xl font-bold"> Home</div>
 
-      <div className="flex flex-row justify-center mt-3 mx-3 px-5 gap-2">
-        <button className="flex w-max h-7 items-center bg-but text-black px-4 py-0 rounded-md text-xm ">
+      <div className="flex flex-row justify-center mt-3 mx-10 px-5 gap-2">
+        <button className="flex w-max items-center bg-but text-black px-4 py-0 rounded-md text-xm ">
           All
         </button>
-        <button className=" w-max  h-7  items-center bg-but text-black px-4  py-0 rounded-md text-xm xm:text-xs ">
+        <button className=" w-max items-center bg-but text-black px-4  py-0 rounded-md text-xm xm:text-xs ">
           Near me
         </button>
-        <button className="flex w-max  h-7  items-center bg-but text-black px-4 py-0  rounded-md md:text-base">
+        <button className="flex w-max items-center bg-but text-black px-4 py-0  rounded-md md:text-base">
           Location
         </button>
         <button
-          className={`flex w-max   h-7 items-center ${
+          className={`flex w-max items-center ${
             isClicked ? "bg-radio" : "bg-but"
           }  text-black px-4 py-0 rounded-md md:text-base`}
           onClick={toggleDropdown}

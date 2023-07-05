@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { TopCities } from "./TopCities.jsx";
 
-export const location = () => {
+export const Location = () => {
 	const [monsters, setMonsters] = useState([]);
 	const [filteredMonsters, setFilteredMonsters] = useState([]);
 	const [drop, setDrop] = useState(false);
+	const [html, setHtml] = useState("");
 
 	useEffect(() => {
 		fetch("https://countriesnow.space/api/v0.1/countries/population/cities")
@@ -29,14 +30,12 @@ export const location = () => {
 	};
 
 	const listClick = (e) => {
-		console.log("helo");
-		const input = document.getElementById("city-search");
-		input.innerHTML = e.target.value;
-		console.log(e.target.value);
+		console.log("hello");
+		setHtml(e.target.innnerHTML);
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center gap-8 ">
+		<div className="flex flex-col items-center justify-center gap-8 mt-[10vh]">
 			<div className="w-[40vw] flex flex-col bg-[#F3E59D] items-center justify-center  rounded-md">
 				<div className=" px-4 py-2  w-[40vw]">
 					<input
@@ -49,27 +48,21 @@ export const location = () => {
 						onBlur={() => setDrop(false)}
 					/>
 				</div>
-				{drop && (
-					<div className="bg-[#F3E59D] w-[40vw] px-4 py-2 ">
-						<ul
-							className=" rounded-lg overflow-hidden "
-							name="monster"
-							id="monsters"
-						>
-							{filteredMonsters.slice(0, 9).map((monster) => (
-								<li key={monster.city}>
-									<button
-										onClick={() => {
-											console.log("Hello");
-										}}
-									>
-										{monster.city}
-									</button>
-								</li>
-							))}
-						</ul>
-					</div>
-				)}
+				<div className="bg-[#F3E59D] w-[40vw] px-4 py-2 ">
+					<ul
+						className=" rounded-lg overflow-hidden text-left"
+						name="monster"
+						id="monsters"
+					>
+						{filteredMonsters.slice(0, 9).map((monster) => (
+							<li key={monster.city}>
+								<button onClick={listClick}>
+									{monster.city}
+								</button>
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
 			<TopCities />
 		</div>

@@ -9,7 +9,7 @@ export const TopCities = () => {
 		{ id: 4, city: "Chennai", src: "images/cities/chennai.svg" },
 		{ id: 5, city: "Delhi-NCR", src: "images/cities/delhi.svg" },
 		{ id: 6, city: "Chenadigarh", src: "images/cities/chandigarh.svg" },
-		{ id: 8, city: "Ahmedabad", src: "images/cities/ahmedabad.svg" },
+		{ id: 7, city: "Ahmedabad", src: "images/cities/ahmedabad.svg" },
 		{ id: 8, city: "Kolkata", src: "images/cities/kolkata.svg" },
 		{ id: 9, city: "Srinagar", src: "images/cities/srinagar.svg" },
 		{ id: 10, city: "Goa", src: "images/cities/goa.svg" },

@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import Domainpage from "./components/home/sections/domain/pages.js/Domainpage";
+import "./Domain.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="text-black h-screen w-full text-center font-bold text-2xl bg-dc">
+        <div className=" translate-y-1/2 h-screen">Flixdin</div>
+      </div>
+
+      {/* <Domainpage /> */}
+    </>
   );
 }
 

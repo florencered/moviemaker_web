@@ -1,11 +1,10 @@
 import React from 'react';
-import Logo from "../../images/cake.png";
 import { Link } from 'react-router-dom';
 
 const Birthdayform= () => {
   return (
     <>
-      <img src={Logo} className='mx-auto w-20' alt="" />
+      <img src="/images/cake.png" className='mx-auto w-20' alt="" />
       <p className="text-1xl font-semibold text-center text-black">Add your date of birth</p>
       <p className="text-1xl font-normal text-center text-black">This won’t be a part of a your public profile.</p>
       <div className="bg-white flex items-center">

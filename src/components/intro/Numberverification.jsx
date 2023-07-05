@@ -1,11 +1,10 @@
 import React from 'react';
-import Logo from '../../images/check.png'
 import { Link } from 'react-router-dom';
 
 const Numberverificationform = () => {
   return (
     <>
-      <img src={Logo} className='mx-auto w-20' alt="" />
+      <img src="/images/check.png" className='mx-auto w-20' alt="" />
       <p className="font-semibold text-center text-black">Let’s get your phone number verified.</p>
       <p className="font-normal text-center text-black">Enter the six digit code we sent to:701377****</p>
       <div className="form-control">

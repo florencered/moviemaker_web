@@ -1,10 +1,9 @@
 import React from 'react';
-import Logo from '../../images/Skills.png'
 import { Link } from 'react-router-dom';
 const Skillselectionform = () => {
   return (
     <>
-      <img src={Logo} className='mx-auto w-24' alt="" />
+      <img src="/images/Skills.png"className='mx-auto w-24' alt="" />
       <p className="text-1xl font-semibold text-center text-black">Add Other Skills</p>
       <p className="text-1xl font-normal text-center text-black">Add other skills other than the main domain selected.</p>
       <div className="radio-container border border-[#978839] p-3 rounded-md flex flex-col text-black text-sm">

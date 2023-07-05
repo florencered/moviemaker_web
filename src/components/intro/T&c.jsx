@@ -1,10 +1,9 @@
 import React from "react";
-import Logo from "../../images/Terms.png";
 import { Link } from "react-router-dom";
 const TermsForm = () => {
   return (
     <>
-      <img src={Logo} className="mx-auto w-24" alt="" />
+      <img src="/images/Terms.png" className="mx-auto w-24" alt="" />
       <h2 className="text-1xl font-semibold text-center text-black">
         Agree to flixdin terms and policies
       </h2>

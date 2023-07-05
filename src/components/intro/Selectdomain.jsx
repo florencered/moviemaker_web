@@ -1,10 +1,9 @@
 import React from 'react';
-import Logo from '../../images/film.png'
 import { Link } from 'react-router-dom';
 const Domainselectionform  = () => {
   return (
     <>
-      <img src={Logo} className='mx-auto w-20' alt="" />
+      <img src="/images/film.png" className='mx-auto w-20' alt="" />
       <p className="text-md font-semibold text-center text-black">Select domain</p>
       <p className="text-xs font-normal text-center text-black">The domain describes your main profession.</p>
       <div className="radio-container flex flex-col text-black text-sm">

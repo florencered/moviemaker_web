@@ -1,11 +1,10 @@
 import React from "react";
-import Logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   return (
     <>
-      <img src={Logo} className="mx-auto w-24" alt="" />
+      <img src="/images/logo.png"className="mx-auto w-24" alt="" />
       <h2 className="text-3xl font-normal text-center text-[#978839]">Login</h2>
       <div className="form-control">
         <label className="label">

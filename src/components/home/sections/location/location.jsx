@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TopCities } from "./TopCities.jsx";
 
-export const SearchCity = () => {
+export const location = () => {
 	const [monsters, setMonsters] = useState([]);
 	const [filteredMonsters, setFilteredMonsters] = useState([]);
 	const [drop, setDrop] = useState(false);

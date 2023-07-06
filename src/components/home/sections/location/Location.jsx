@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TopCities } from "./TopCities.jsx";
+import { GoSearch } from "react-icons/go";
 
 const Location = () => {
 	const [monsters, setMonsters] = useState([]);
@@ -43,7 +44,7 @@ const Location = () => {
 
 	return (
 		<div className="">
-			<div className="max-w-[40vw] flex flex-col items-center justify-center gap-8 mb-10">
+			<div className="w-[40vw] flex flex-col items-center justify-center gap-8 mb-10">
 				<div className="w-full flex flex-col bg-[#F3E59D] items-center justify-center  rounded-md">
 					<div className="w-full">
 						{drop ? (
@@ -56,16 +57,21 @@ const Location = () => {
 								onBlur={() => unFocus()}
 							/>
 						) : (
-							<div
-								className={
-									"shadow-none border-none bg-transparent focus:outline-none text-left px-4 py-2 " +
-									(html === "Select City"
-										? "text-gray-400"
-										: "")
-								}
-								dangerouslySetInnerHTML={{ __html: html }}
-								onClick={() => setDrop(true)}
-							></div>
+							<div className="ml-4 flex text-gray-400 items-center">
+								<span>
+									<GoSearch />
+								</span>
+								<div
+									className={
+										"shadow-none border-none bg-transparent focus:outline-none text-left px-4 py-2 " +
+										(html === "Select City"
+											? "text-gray-400"
+											: "")
+									}
+									dangerouslySetInnerHTML={{ __html: html }}
+									onClick={() => setDrop(true)}
+								></div>
+							</div>
 						)}
 					</div>
 					<div
@@ -91,7 +97,9 @@ const Location = () => {
 						</ul>
 					</div>
 				</div>
-				<TopCities />
+				<div className="w-[40vw]">
+					<TopCities />
+				</div>
 			</div>
 		</div>
 	);

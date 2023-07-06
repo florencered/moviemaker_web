@@ -21,7 +21,7 @@ export const TopCities = () => {
 		<div className="bg-[#F3E59D] rounded-lg flex flex-col items-center justify-between">
 			<div className="w-max px-8 py-4 pb-8">
 				<h1 className="font-bold mb-8">Top Cities</h1>
-				<div className="grid grid-cols-4 gap-x-4 gap-y-8">
+				<div className="grid grid-cols-4 gap-x-8 gap-y-8">
 					{citiesJSON.map((city) => (
 						<div key={city.id}>
 							<TopCitiesCard city={city.city} src={city.src} />

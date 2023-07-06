@@ -9,7 +9,7 @@ import NearMe from "./nearMe/nearMe"
 function sections() {
   return (
     <>
-    <div class = "flex flex-row mt-4 space-x-4">
+    <div class = "flex flex-row mt-4 space-x-4 pr-16">
         {/* <a href=""><div class="flex bg-[#A6A5A2] hover:bg-[#E7DA95] py-2 ml-32 rounded-lg px-4 font-semibold">All</div></a>&nbsp;&nbsp;&nbsp;&nbsp; */}
         {/* <h1 class = "text-4xl font-bold text-[#C1AD42] flex ml-20 mt-4">Home</h1> */}
         <All/>

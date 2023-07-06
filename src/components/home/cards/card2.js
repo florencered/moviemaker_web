@@ -3,9 +3,10 @@ import React from 'react'
 function card2() {
   return (
     <div>
-        <div class="mt-8 mr-6 ml-6 p-4 bg-yellow border border-yellow-200 rounded-3xl shadow sm:p-8 dark:bg-[#F7EAA9] dark:border-yellow-200">
+        <div class="mt-8 mr-2 ml-5 p-4 bg-[#F7EAA9] border border-[#F7EAA9] rounded-3xl shadow sm:p-8 dark:bg-[#F7EAA9] dark:border-[#F7EAA9]">
     <div class="flex items-center justify-between mb-4">
         <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-black">Recommendations</h5>
+        {/* <h5 class="text-xl font-bold leading-none text-[#F7EAA9]">Recommendations</h5> */}
    </div>
    <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">

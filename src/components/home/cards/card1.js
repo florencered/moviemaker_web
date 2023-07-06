@@ -4,10 +4,10 @@ function card1() {
   return (
     <>
         
-<div class="flex items-center mt-8 w-full justify-center rounded-3xl">
+<div class="flex items-center mt-8 justify-center rounded-3xl">
 
-<div class="px-5 rounded-3xl">
-    <div class="bg-[#F7EAA9] shadow-xl py-3 px-5 rounded-3xl">
+<div class="pr-2 ml-5 rounded-3xl">
+    <div class="bg-[#F7EAA9] shadow-xl py-3 px-2 rounded-3xl">
         <div class="photo-wrapper p-2">
             <img class="w-20 h-20 rounded-full mx-auto" src="https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp" alt="John Doe"/>
         </div>
@@ -20,11 +20,11 @@ function card1() {
                 <p>I didn't go to film school, I went to films.</p>
             </div>
 
-            <div class="flex flex-row bg-[#C6B34E] p-2 rounded-3xl mt-4">
-                <div class="flex text-white px-3"> 12 posts</div>
-                <div class="flex text-white px-3">882 followers</div>
-                <div class="flex text-white px-3">64 following</div>
-                <div class="flex text-white px-3">918 likes</div>
+            <div class="flex flex-row bg-[#C6B34E] py-2 px-1 rounded-2xl mt-4">
+                <div class="flex text-white px-3 font-medium"> 12 posts</div>
+                <div class="flex text-white px-3 font-medium">882 followers</div>
+                <div class="flex text-white px-3 font-medium">64 following</div>
+                <div class="flex text-white px-3 font-medium">918 likes</div>
             </div>
 
             <div class="text-center my-3 mt-5">

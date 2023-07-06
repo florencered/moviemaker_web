@@ -5,8 +5,8 @@ import Nav from "../home/sidebar/sidebar.js";
 const Explora = () => {
   return (
     <div className="flex">
-      <div class="bg-[#F7EAA9] items rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
-        <Nav props1="/images/logo.png"></Nav>
+      <div class="bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
+        <Nav src="/images/logo.png"></Nav>
       </div>
       <div className="flex justify-center ml-3 pl-4">
         <div>

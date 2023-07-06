@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const RadioButtons = ({ onValueChange, selectedValue }) => {
+const RadioButtons = ({ selectedValue }) => {
   const [value, setValue] = useState(selectedValue);
 
   const handleValueChange = (event) => {
     const newValue = event.target.value;
     setValue(newValue);
-    onValueChange(newValue);
   };
 
   const types = [
@@ -28,8 +27,8 @@ const RadioButtons = ({ onValueChange, selectedValue }) => {
   ];
 
   return (
-    <div className="mr-2.5">
-      <div className="flex flex-col mt-6 bg-radio absolute z-50 w-full rounded-lg ">
+    <div className=" items-center mx-16 display: block; ">
+      <div className="flex flex-col  bg-radio absolute z-50 w-full xs:w-1/4 md:w-3/4 rounded-lg ">
         <div className="text-black font-medium border-b-2 border-[#b1991e] text-center  border-color:#b1991e">
           Select Domain
         </div>

@@ -1,60 +1,32 @@
 import React from "react";
-import { FaRegCircleDot } from "react-icons/fa6";
-import { useState } from "react";
 import RadioButtons from "./RadioButtons";
 import PostCard from "./Domainpost";
+import Heading from "../../Heading/Heading";
+import Carousel from "../../caro/Carousel";
+// import Section from "../../sections/sections";
+import Post from "../../connectionCalls_home/connectionCalls_home";
+import Sections from "../../sections/sections";
+import useButtonGroup from "./useButtonGroup";
 
 const DamainMain = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+  const [isOpen, isClicked, toggleDropdown, selectedValue, handleValueChange] =
+    useButtonGroup();
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-    setIsClicked(!isClicked);
-  };
-  const [selectedValue, setSelectedValue] = useState("");
-
-  console.log(selectedValue);
-  const handleValueChange = (value) => {
-    setSelectedValue(value);
-    setIsOpen(false);
-  };
   return (
-    <div className="flex-col relative h-max text-black px-4 mx-20">
-      <div className="text-white  text-y text-2xl font-bold"> Home</div>
-
-      <div className="flex flex-row justify-center mt-3 mx-10 px-5 gap-2">
-        <button className="flex w-max items-center bg-but text-black px-4 py-0 rounded-md text-xm ">
-          All
-        </button>
-        <button className=" w-max items-center bg-but text-black px-4  py-0 rounded-md text-xm xm:text-xs ">
-          Near me
-        </button>
-        <button className="flex w-max items-center bg-but text-black px-4 py-0  rounded-md md:text-base">
-          Location
-        </button>
-        <button
-          className={`flex w-max items-center ${
-            isClicked ? "bg-radio" : "bg-but"
-          }  text-black px-4 py-0 rounded-md md:text-base`}
-          onClick={toggleDropdown}
-        >
-          Domain
-        </button>
-        <button className="flex h-7  w-max items-center bg-but text-black px-1 py-2 rounded-md md:text-base">
-          <FaRegCircleDot size="1.25rem"></FaRegCircleDot>
-        </button>
-      </div>
-
+    <div className="flex-col relative">
+      <Heading />
+      <Sections isClicked={isClicked} toggleDropdown={toggleDropdown} />
       {isOpen && (
-        <div className="z-96">
+        <div className="z-96 items-center justify-center display: block;">
           <RadioButtons
             selectedValue={selectedValue}
             onValueChange={handleValueChange}
+            className="max-w-md"
           />
         </div>
       )}
-
+      <Carousel />
+      <Post />
       <PostCard selectedValue={selectedValue} />
     </div>
   );

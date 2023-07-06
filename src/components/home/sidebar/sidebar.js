@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaClapperboard } from "react-icons/fa6";

@@ -53,7 +53,7 @@
 }
 
 .genre{
-    @apply hover:bg-[#E7DA95] px-7 py-2 rounded-xl max-w-fit bg-[#CBC8BA] duration-700 mr-3 cursor-default
+    @apply hover:bg-[#E7DA95] px-7 py-2 rounded-xl max-w-fit bg-[#CBC8BA] duration-700 mr-3 hover:cursor-pointer
 }
 .text-shadow-lg{
     text-shadow: 3px 3px 6px rgb(0 0 0 / 26%), 0 0 5px rgb(15 3 86 / 22%)

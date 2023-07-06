@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import './App.css';
 import Home from "./components/home/home";
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path = "/home" element = {<Home/>}/>
-        <Route path = "/Explore" element = {<Explore />} />
+        <Route path = "/explore" element = {<Explore />} />
         </Routes>
       </BrowserRouter>
     </div>

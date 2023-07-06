@@ -21,57 +21,57 @@ function sidebar(props) {
           flixdin
         </div>
       <div className="md:ml-6">
-        <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-10 p-2 hover:bg-white font-semibold">
+        <a href="/home">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-10 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaHome size="1.5rem" class="ml-5"></FaHome>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home
           </div>
         </a>
-        <a href="/Explore">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+        <a href="/explore">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaSearch size="1.5rem" class="ml-5"></FaSearch>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-5 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-5 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaClapperboard size="1.5rem" class="ml-5"></FaClapperboard>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connection Calls
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaSquareYoutube size="1.5rem" class="ml-5"></FaSquareYoutube>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flicks
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaMessage size="1.5rem" class="ml-5"></FaMessage>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Messages
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaBell size="1.5rem" class="ml-5"></FaBell>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notifications
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaSquarePlus size="1.5rem" class="ml-5"></FaSquarePlus>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <BsPersonCircle size="1.5rem" class="ml-5"></BsPersonCircle>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile
           </div>
         </a>
 
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-10 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-10 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <BsFillInfoCircleFill
               size="1.5rem"
               class="ml-5"
@@ -80,13 +80,13 @@ function sidebar(props) {
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <FaList size="1.5rem" class="ml-5"></FaList>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More
           </div>
         </a>
         <a href="/">
-          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">
+          <div class="flex flex-row rounded-lg lg:text-base text-sm mr-10 mt-1 mb-3 p-2 hover:cursor-pointer hover:bg-white font-semibold">
             <VscSignOut size="1.5rem" class="ml-5"></VscSignOut>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log out
           </div>

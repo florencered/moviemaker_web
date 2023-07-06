@@ -12,15 +12,8 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa6";
 import { VscSignOut } from "react-icons/vsc";
 
-import AddPost from "../../create/create";
-
 function sidebar(props) {
   
-  const [modal, setModal] = useState(false);
-  const handleCreateClick = (e) => {
-    e.preventDefault();
-    setModal(!modal);
-  };
   return (
     <>
       <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-2 pt-1">
@@ -79,13 +72,12 @@ function sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notifications
         </div>
       </a>
-      <a href="/" onClick={handleCreateClick}>
+      <a href="/">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaSquarePlus size="1.5rem" class="ml-5"></FaSquarePlus>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create
         </div>
       </a>
-      {modal && <AddPost handleCreateClick={handleCreateClick} />}
       <a href="/">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <BsPersonCircle size="1.5rem" class="ml-5"></BsPersonCircle>

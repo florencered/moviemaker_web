@@ -9,7 +9,7 @@ const NotificationItem = ({ each }) => {
 
   return (
     <>
-      <div className={`h-20 ml-4 shrink-0 rounded-xl bg-[#ecdd8c] flex items-center justify-between  cursor-pointer px-4 ${visited && 'bg-[#ECE5BE]'}`} onClick={handleClick}>
+      <div className={`h-20 ml-4 shrink-0 rounded-xl bg-[#ecdd8c] flex items-center justify-between  cursor-pointer px-4 ${each?.visited && 'bg-[#dccb69]'}`} onClick={handleClick}>
         <div className="flex items-center gap-1">
         <img src={each?.pic} alt=".." className="w-10 h-10 shrink-0 rounded-3xl bg-no-repeat object-cover" />
         <div className="text-[#000] text-xl leading-4 font-semibold not-italic">{each?.name}</div>

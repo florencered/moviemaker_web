@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import NewPost from "./NewPost";
 
-const Create = () => {
+const Create = ({handleCreateClick}) => {
   const [modal, setModal] = useState(false);
   const handleClick1 = (e) => {
     e.preventDefault();

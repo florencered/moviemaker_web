@@ -13,27 +13,28 @@ import Carousel from "./caro/Carousel";
 // import "./caro/carousel_styling"
 import "./styles/carousel.css";
 
+// prettier-ignore
 function home() {
-	return (
-		<>
-			<div className="App flex flex-row">
-				<div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
-					<Nav></Nav>
-				</div>
-				<div class="basis-1/2 pr-3">
-					<Heading></Heading>
-					<Section></Section>
-					<Carousel />
-					<Post></Post>
-					<PostCard></PostCard>
-				</div>
-				<div class="basis-1/4">
-					<Profile></Profile>
-					<ProfileList></ProfileList>
-				</div>
-			</div>
-		</>
-	);
+  return (
+    <>
+    <div className="App flex flex-row">
+      <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+        <Nav></Nav>
+      </div>
+      <div class="basis-1/2 pr-3">
+        <Heading></Heading>
+        <Section></Section>
+        <Carousel />
+        <Post></Post>
+        <PostCard></PostCard>
+      </div>
+      <div class="basis-1/4">
+        <Profile></Profile>
+        <ProfileList></ProfileList>
+      </div>
+    </div>
+    </>
+  );
 }
 
 export default home;

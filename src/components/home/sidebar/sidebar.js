@@ -13,8 +13,8 @@ import { VscSignOut } from "react-icons/vsc";
 
 function sidebar(props) {
   return (
-    <>
-      <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-2 pt-1">
+    <div className="">
+      <div class="flex flex-col justify-center items-center bg-black h-10  w-64 mt-8 rounded-3xl mx-5 pt-1">
         {/* <div class ="flex-auto p-0 h-0"><img src={props.props1} className="App-logo h-12 w-12" alt="logo"/></div> */}
         <div
           class="text-center flex ml-12"
@@ -47,7 +47,7 @@ function sidebar(props) {
         </div>
       </a>
       <a href="/">
-        <div class="flex flex-row rounded-lg ml-10 mr-5 mt-1 p-1 hover:bg-white font-semibold">
+        <div class="flex flex-row rounded-lg ml-10 mr-5 mt-1 p-2 hover:bg-white font-semibold">
           <FaClapperboard size="1.5rem" class="ml-5"></FaClapperboard>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connection Calls
         </div>
@@ -104,7 +104,7 @@ function sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log out
         </div>
       </a>
-    </>
+    </div>
   );
 }
 

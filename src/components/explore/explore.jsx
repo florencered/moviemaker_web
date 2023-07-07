@@ -1,6 +1,7 @@
 import React from "react";
 import Exploreimage from "./Exploreimage";
 import Nav from "../home/sidebar/sidebar.js";
+import Sections from "../home/sections/sections.js";
 
 
 const Explora = () => {
@@ -16,6 +17,7 @@ const Explora = () => {
               <img src="/images/Explorelogo.png" alt="Heading" />
             </h1>
           </div>
+          <div className=""><Sections/></div>
           <div>
             <div className="py-3 pr-4 text-[#5B4E07]">
               <input

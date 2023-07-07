@@ -44,19 +44,19 @@ function Sidebar(props) {
           </div>
         </div>
       </div>
-      <a href="/">
+      <a href="/home">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-10 p-2 hover:bg-white font-semibold">
           <FaHome size="1.5rem" class="ml-5"></FaHome>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home
         </div>
       </a>
-      <a href="/">
+      <a href="/explore">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaSearch size="1.5rem" class="ml-5"></FaSearch>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore
         </div>
       </a>
-      <a href="/">
+      <a href="/connectionCalls">
         <div class="flex flex-row rounded-lg ml-11 mr-5 mt-2 p-1 hover:bg-white font-semibold">
           <FaClapperboard size="1.5rem" class="ml-5 mt-1"></FaClapperboard>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connection Calls
@@ -74,7 +74,7 @@ function Sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Messages
         </div>
       </a>
-      <a href="/">
+      <a href="/notifications">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaBell size="1.5rem" class="ml-5"></FaBell>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notifications

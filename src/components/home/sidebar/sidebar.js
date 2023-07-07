@@ -13,6 +13,7 @@ import { VscSignOut } from "react-icons/vsc";
 import Create from "../../create/create"
 
 function sidebar(props) {
+
   const [modal, setModal] = useState(false);
   const handleCreate = (e) => {
     e.preventDefault();
@@ -109,6 +110,7 @@ function sidebar(props) {
     </span>Log out</div></a>
     </>
   );
+
 }
 
 export default sidebar;

@@ -15,37 +15,33 @@ import useButtonGroup from "./sections/domain/useButtonGroup";
 import RadioButtons from "./sections/domain/RadioButtons";
 import Sections from "./sections/sections";
 import PostCard from "./sections/domain/Domainpost";
+import HorizontalSections from "../connectionCalls/HorizontalSection";
 
 function Home() {
   const [isOpen, isClicked, toggleDropdown] = useButtonGroup();
 
   return (
     <>
-
-      <div className="App flex flex-row justify-between bg-[#FFFADD]">
-        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2 h-1/2">
-
-          <Nav></Nav>
-        </div>
+      <div className="App flex flex-row">
+        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+          <Nav> </Nav>{" "}
+        </div>{" "}
         <div class="h-max md:basis-1/2 pr-3 relative">
-          <Heading></Heading>
-          <Sections isClicked={isClicked} toggleDropdown={toggleDropdown} />
-
+          <Heading> </Heading>{" "}
+          <Sections isClicked={isClicked} toggleDropdown={toggleDropdown} />{" "}
           {isOpen && (
-            <div className="z-96 items-center justify-center display: block;">
-              <RadioButtons className="max-w-md" />
+            <div className="absolute z-50 xs:w-1/4 md:w-3/4 mx-20 items-center justify-center display: block;">
+              <RadioButtons className="max-w-md " />
             </div>
-          )}
-
+          )}{" "}
           <Carousel />
           <Post />
           <PostCard />
-        </div>
+        </div>{" "}
         <div class="basis-1/4">
-          <Profile></Profile>
-          <ProfileList></ProfileList>
-        </div>
-      </div>
+          <Profile> </Profile> <ProfileList> </ProfileList>{" "}
+        </div>{" "}
+      </div>{" "}
     </>
   );
 }

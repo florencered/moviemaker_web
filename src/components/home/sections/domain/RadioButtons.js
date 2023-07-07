@@ -26,18 +26,19 @@ const RadioButtons = ({ selectedValue }) => {
     { id: 15, name: "Writer" },
   ];
 
+  //in the second div make it absolute if you want the domain to overlap
   return (
-    <div className=" items-center mx-16 display: block; ">
-      <div className="flex flex-col  bg-radio absolute z-50 w-full xs:w-1/4 md:w-3/4 rounded-lg ">
+    <div className=" items-center  display: block;">
+      <div className="flex flex-col  bg-radio rounded-lg ">
         <div className="text-black font-medium border-b-2 border-[#b1991e] text-center  border-color:#b1991e">
-          Select Domain
-        </div>
+          Select Domain{" "}
+        </div>{" "}
         {types.map((type) => (
           <label
             key={type.id}
             className="flex mt-1 justify-between px-3 cursor-pointer"
           >
-            <span className="">{type.name}</span>
+            <span className=""> {type.name} </span>{" "}
             <input
               type="radio"
               value={type.name}
@@ -46,8 +47,8 @@ const RadioButtons = ({ selectedValue }) => {
               className="appearance-none w-4 h-4 border-4 border-white rounded-full bg-white hidden checked:block checked:bg-black checked:border-white focus:outline-none "
             />
           </label>
-        ))}
-      </div>
+        ))}{" "}
+      </div>{" "}
     </div>
   );
 };

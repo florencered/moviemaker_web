@@ -7,7 +7,7 @@ import Post from "./connectionCalls_home/connectionCalls_home";
 // import PostCard from "./post/post";
 import ProfileList from "./cards/card2";
 import Profile from "./cards/card1";
-import Carousel from "./caro/Carousel";
+import Carousel from "./caro/MyCr";
 // import "./caro/carousel.css";
 // import "./caro/carousel_styling"
 import "./styles/carousel.css";
@@ -21,8 +21,10 @@ function Home() {
 
   return (
     <>
-      <div className="App flex flex-row">
-        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+
+      <div className="App flex flex-row justify-between bg-[#FFFADD]">
+        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2 h-1/2">
+
           <Nav></Nav>
         </div>
         <div class="h-max md:basis-1/2 pr-3 relative">

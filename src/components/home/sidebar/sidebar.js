@@ -84,7 +84,9 @@ function sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create
         </div>
       </a>
+
       {modal && <Create handleCreate ={handleCreate} />}
+
       <a href="/"><div class = "flex flex-row rounded-lg ml-12 mr-10 mt-1 p-2 pl-4 hover:bg-white font-semibold"><img class="h-8 w-8 rounded-full" src="https://picsum.photos/id/1027/150/150"/>&nbsp;&nbsp;&nbsp;&nbsp;My Profile</div></a>
 
       <a href="/">

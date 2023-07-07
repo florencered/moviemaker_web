@@ -3,8 +3,8 @@ import React from "react";
 function card2() {
   return (
     <div>
-      <div class="mt-8 mr-6 ml-6 p-4 bg-yellow border border-yellow-200 rounded-3xl shadow sm:p-8 bg-[#F7EAA9]  dark:border-yellow-200">
-        <div class="flex items-center justify-between mb-4">
+      <div class="mt-8 mr-10 ml-1 bg-yellow border border-yellow-200 rounded-3xl shadow sm:p-8 bg-[#F7EAA9]  dark:border-yellow-200">
+        <div class="flex items-center justify-between mb-4 mr-8">
           <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-black">
             Recommendations
           </h5>

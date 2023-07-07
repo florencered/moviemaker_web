@@ -7,7 +7,7 @@ import Post from "./connectionCalls_home/connectionCalls_home";
 // import PostCard from "./post/post";
 import ProfileList from "./cards/card2";
 import Profile from "./cards/card1";
-import Carousel from "./caro/Carousel";
+import Carousel from "./caro/MyCr";
 // import "./caro/carousel.css";
 // import "./caro/carousel_styling"
 import "./styles/carousel.css";

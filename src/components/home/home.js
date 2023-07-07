@@ -1,5 +1,5 @@
 // import './App.css';
-import Nav from "./sidebar/Sidebar";
+import Nav from "./sidebar/sidebar";
 // import Flixlogo from "..../"
 // image: "/images/flix_Logo.svg"
 import Heading from "./Heading/Heading";

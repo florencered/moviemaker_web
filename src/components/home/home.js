@@ -21,8 +21,10 @@ function Home() {
 
   return (
     <>
+
       <div className="App flex flex-row justify-between bg-[#FFFADD]">
-        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2 h-1/2">
+
           <Nav></Nav>
         </div>
         <div class="h-max md:basis-1/2 pr-3 relative">

@@ -14,8 +14,10 @@ import { VscSignOut } from "react-icons/vsc";
 function sidebar(props) {
   return (
     <>
+
       <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-1 pt-1 mr-2">
-        {/* <div class ="flex-auto p-0 h-0"><img src={props.props1} className="App-logo h-12 w-12" alt="logo"/></div> */}
+
+        
         <div
           class="text-center flex ml-12"
           style={{ alignItems: "center", width: "150px", height: "200px" }}

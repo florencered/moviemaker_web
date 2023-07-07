@@ -7,8 +7,10 @@ function Sections({ isClicked, toggleDropdown }) {
 
 	return (
 		<>
+
 			<div className="flex flex-row mt-4 mb-6 space-x-4 pr-16">
 				<button className="flex bg-[#E7DA95] py-2 ml-32 rounded-lg px-4 font-semibold">
+
 					All
 				</button>
 				<button className="flex bg-[#A6A5A2] hover:bg-[#E7DA95] py-2 rounded-lg px-4 font-semibold">

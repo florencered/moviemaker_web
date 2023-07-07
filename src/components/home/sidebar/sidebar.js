@@ -10,8 +10,14 @@ import { BsPersonCircle } from "react-icons/bs";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa6";
 import { VscSignOut } from "react-icons/vsc";
+import Create from "../../create/create"
 
 function sidebar(props) {
+  const [modal, setModal] = useState(false);
+  const handleCreate = (e) => {
+    e.preventDefault();
+    setModal(!modal);
+  };
   return (
     <>
 
@@ -72,12 +78,15 @@ function sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notifications
         </div>
       </a>
-      <a href="/">
+      <a href="/" onClick={handleCreate}>
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaSquarePlus size="1.5rem" class="ml-5"></FaSquarePlus>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create
         </div>
       </a>
+
+      {modal && <Create handleCreate ={handleCreate} />}
+
       <a href="/"><div class = "flex flex-row rounded-lg ml-12 mr-10 mt-1 p-2 pl-4 hover:bg-white font-semibold"><img class="h-8 w-8 rounded-full" src="https://picsum.photos/id/1027/150/150"/>&nbsp;&nbsp;&nbsp;&nbsp;My Profile</div></a>
 
       <a href="/">

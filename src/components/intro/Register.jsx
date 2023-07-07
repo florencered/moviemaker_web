@@ -19,18 +19,22 @@ const RegisterForm = () => {
   const [dob, setDob] = useState("");
   const [domain, setDomain] = useState("");
   const [skills, setSkills] = useState([]);
-
-  const registerHandler = async (e) => {
-    e.preventDefault();
-    setActive("second");
-  }
+  let checkboxCount = 0;
 
   const registerUser = async (e) => {
     e.preventDefault();
-    const temp = skills.filter((skill) => skill === 'true');
+    const temp = [...skills]
+    const skillList = ["Animation", "Art Director", "Cinematographer", "Actor", "Director", "Editor", "Music Director", "Screenwriter", "Sound Designer", "VFX Artist", "Writer", "Producer"]
+    const skillset = []
+    for (let i = 0; i < temp.length; i++) {
+      if (temp[i] === 'true') {
+        skillset.push(skillList[i])
+      }
+    }
+    console.log(skillset);
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const db = getDatabase();
-    set(ref(db, 'users/' + `${username}`), {
+    set(ref(db, `users/${username}`), {
       name: name,
       email: email,
       username: username,
@@ -39,7 +43,6 @@ const RegisterForm = () => {
       domain: domain,
       skills: temp
     });
-    // console.log(res)
     navigate('/thanks');
   }
 
@@ -47,6 +50,17 @@ const RegisterForm = () => {
     let temp = [...skills];
     temp[e.target.id - 1] === 'true' ? temp[e.target.id - 1] = 'false' : temp[e.target.id - 1] = 'true';
     setSkills(temp);
+
+    checkboxCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (checkboxCount === 0) {
+      document.querySelectorAll('input[type="checkbox"]:not(:checked)').forEach((checkbox) => { checkbox.disabled = false });
+    }
+    else if (checkboxCount === 1) {
+      document.querySelectorAll('input[type="checkbox"]:not(:checked)').forEach((checkbox) => { checkbox.disabled = false });
+    }
+    else if (checkboxCount === 2) {
+      document.querySelectorAll('input[type="checkbox"]:not(:checked)').forEach((checkbox) => { checkbox.disabled = true });
+    }
   }
 
   return (
@@ -117,7 +131,7 @@ const RegisterForm = () => {
         </div> */}
         <div className="form-control -mb-2 mt-3">
           <button className="btn bg-[#C6B34E] normal-case rounded-full border-none text-black hover:bg-[#978839]"
-            onClick={registerHandler}>
+            onClick={() => { setActive("second") }}>
             Register
           </button>
           <label className="label text-center mx-auto">
@@ -205,8 +219,8 @@ const RegisterForm = () => {
         <img src="/images/Skills.png" className='mx-auto w-24' alt="" />
         <p className="text-1xl font-semibold text-center text-black">Add Other Skills</p>
         <p className="text-1xl font-normal text-center text-black">Add other skills other than the main domain selected.</p>
-        <div className="radio-container border border-[#978839] p-3 rounded-md flex flex-col text-black text-sm">
-          <form onChange={checkboxForm}>
+        <form onChange={checkboxForm}>
+          <div className="radio-container border border-[#978839] p-3 rounded-md flex flex-col text-black text-sm">
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="1" name="Animation" value="Animation" /><span>Animation</span></div>
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="2" name="Art Director" value="Art Director" /><span>Art Director</span></div>
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="3" name="Cinematographer" value="Cinematographer" /><span>Cinematographer</span></div>
@@ -219,14 +233,14 @@ const RegisterForm = () => {
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="10" name="VFX Artist" value="VFX Artist" /><span>VFX Artist</span></div>
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="11" name="Writer" value="Writer" /><span>Writer</span></div>
             <div className='flex flex-row-reverse w-full justify-between items-center'><input type="checkbox" id="12" name="Producer" value="Producer" /><span>Producer</span></div>
-            <div className="form-control mt-2">
-              <button type="submit" className="btn bg-[#C6B34E] rounded-full normal-case border-none text-black hover:bg-[#978839]" onClick={(e) => { e.preventDefault(); setActive("sixth"); }}>Add Skills</button>
-              <label className="label text-center mx-auto mt-1">
-                <Link to="/" className="label-text-alt link link-hover">Already have an account? Login!</Link>
-              </label>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div className="form-control mt-2">
+            <button type="submit" className="btn bg-[#C6B34E] rounded-full normal-case border-none text-black hover:bg-[#978839]" onClick={(e) => { e.preventDefault(); setActive("sixth"); }}>Add Skills</button>
+            <label className="label text-center mx-auto mt-auto">
+              <Link to="/" className="label-text-alt link link-hover">Already have an account? Login!</Link>
+            </label>
+          </div>
+        </form>
       </>}
 
       {active === "sixth" && <>
@@ -250,11 +264,14 @@ const RegisterForm = () => {
         <div className="form-control mt-6">
           <button
             className="btn normal-case bg-[#C6B34E] rounded-full border-none text-black hover:bg-[#978839]"
-            onClick={
-              registerUser
-            }>
+            onClick={registerUser}>
             I agree
           </button>
+        </div>
+        <div className="form-control mt-auto">
+          <label className="label text-center mx-auto mt-1">
+            <Link to="/" className="label-text-alt link link-hover">Already have an account? Login!</Link>
+          </label>
         </div>
       </>}
 

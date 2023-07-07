@@ -22,7 +22,7 @@ function Home() {
   return (
     <>
       <div className="App flex flex-row">
-        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+        <div class=" rounded-r-2xl mb-2 pb-3 w-1/5 h-fit bg-[#F7EAA9]">
           <Nav></Nav>
         </div>
         <div class="h-max md:basis-1/2 pr-3 relative">

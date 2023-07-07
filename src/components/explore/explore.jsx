@@ -1,6 +1,6 @@
 import React from "react";
 import Exploreimage from "./Exploreimage";
-import Nav from "../home/sidebar/sidebar.js";
+import Nav from "../home/sidebar/Sidebar.js";
 import Sections from "../home/sections/sections.js";
 
 

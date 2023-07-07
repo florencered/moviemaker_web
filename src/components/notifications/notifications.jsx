@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NotificationItem from "./NotificationItem";
-import Sidebar from "../home/sidebar/sidebar";
+import Sidebar from "../home/sidebar/Sidebar.js";
 const Notifications = () => {
   const [toggle, setToggle] = useState(true);
 

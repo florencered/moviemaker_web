@@ -10,9 +10,10 @@ import { BsPersonCircle } from "react-icons/bs";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa6";
 import { VscSignOut } from "react-icons/vsc";
-import Create from "../../create/create"
+import Create from "../../create/create" 
+import { useState } from "react";
 
-function sidebar(props) {
+function Sidebar(props) {
   const [modal, setModal] = useState(false);
   const handleCreate = (e) => {
     e.preventDefault();
@@ -111,4 +112,4 @@ function sidebar(props) {
   );
 }
 
-export default sidebar;
+export default Sidebar;

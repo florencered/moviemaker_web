@@ -1,7 +1,7 @@
 import React from "react";
 import DomainMain from "./DomainMain";
 import "./Domain.css";
-import Nav from "../../sidebar/sidebar";
+import Nav from "../../sidebar/Sidebar";
 import Profile from "../../cards/card1";
 import ProfileList from "../../cards/card2";
 const Domainpage = () => {

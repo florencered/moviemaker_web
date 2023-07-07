@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaClapperboard } from "react-icons/fa6";
@@ -11,10 +10,9 @@ import { BsPersonCircle } from "react-icons/bs";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa6";
 import { VscSignOut } from "react-icons/vsc";
-
 import Create from "../../create/create"
 
-function Sidebar(props) {
+function sidebar(props) {
   const [modal, setModal] = useState(false);
   const handleCreate = (e) => {
     e.preventDefault();
@@ -22,8 +20,10 @@ function Sidebar(props) {
   };
   return (
     <>
-      <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-2 pt-1">
-        {/* <div class ="flex-auto p-0 h-0"><img src={props.props1} className="App-logo h-12 w-12" alt="logo"/></div> */}
+
+      <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-1 pt-1 mr-2">
+
+        
         <div
           class="text-center flex ml-12"
           style={{ alignItems: "center", width: "150px", height: "200px" }}
@@ -36,7 +36,7 @@ function Sidebar(props) {
             />
           </div>
           <div>
-            <h4 class="font-semibold text-lg text-[#E0C949] text-center">
+            <h4 class="font-bold text-lg text-[#E0C949] text-center">
               flixdin
             </h4>
           </div>
@@ -55,8 +55,8 @@ function Sidebar(props) {
         </div>
       </a>
       <a href="/">
-        <div class="flex flex-row rounded-lg ml-10 mr-5 mt-1 p-1 hover:bg-white font-semibold">
-          <FaClapperboard size="1.5rem" class="ml-5"></FaClapperboard>
+        <div class="flex flex-row rounded-lg ml-11 mr-5 mt-2 p-1 hover:bg-white font-semibold">
+          <FaClapperboard size="1.5rem" class="ml-5 mt-1"></FaClapperboard>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connection Calls
         </div>
       </a>
@@ -85,12 +85,7 @@ function Sidebar(props) {
         </div>
       </a>
       {modal && <Create handleCreate ={handleCreate} />}
-      <a href="/">
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
-          <BsPersonCircle size="1.5rem" class="ml-5"></BsPersonCircle>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Profile
-        </div>
-      </a>
+      <a href="/"><div class = "flex flex-row rounded-lg ml-12 mr-10 mt-1 p-2 pl-4 hover:bg-white font-semibold"><img class="h-8 w-8 rounded-full" src="https://picsum.photos/id/1027/150/150"/>&nbsp;&nbsp;&nbsp;&nbsp;My Profile</div></a>
 
       <a href="/">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-10 p-2 hover:bg-white font-semibold">
@@ -107,14 +102,11 @@ function Sidebar(props) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More
         </div>
       </a>
-      <a href="/">
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">
-          <VscSignOut size="1.5rem" class="ml-5"></VscSignOut>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log out
-        </div>
-      </a>
+      <a href="/"><div class = "flex flex-row rounded-lg ml-10 mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">&nbsp;&nbsp;&nbsp;&nbsp;<span style={{ transform: 'scaleX(-1)' }}>
+      <VscSignOut size="1.5rem" className="ml-5" color="red" />
+    </span>Log out</div></a>
     </>
   );
 }
 
-export default Sidebar;
+export default sidebar;

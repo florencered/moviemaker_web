@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from './Avatar';
-import '../styles/carousel.css';
+
 import { statusCarousel } from './data';
 
 const Carousel = () => {

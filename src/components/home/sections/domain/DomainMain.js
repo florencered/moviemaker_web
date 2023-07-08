@@ -3,7 +3,6 @@ import RadioButtons from "./RadioButtons";
 import PostCard from "./Domainpost";
 import Heading from "../../Heading/Heading";
 import Carousel from "../../caro/Carousel";
-// import Section from "../../sections/sections";
 import Post from "../../connectionCalls_home/connectionCalls_home";
 import Sections from "../../sections/sections";
 import useButtonGroup from "./useButtonGroup";

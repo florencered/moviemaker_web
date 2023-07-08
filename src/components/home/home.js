@@ -10,7 +10,7 @@ import Profile from "./cards/card1";
 import Carousel from "./caro/MyCr";
 // import "./caro/carousel.css";
 // import "./caro/carousel_styling"
-import "./styles/carousel.css";
+// import "./styles/carousel.css";
 import useButtonGroup from "./sections/domain/useButtonGroup";
 import RadioButtons from "./sections/domain/RadioButtons";
 import Sections from "./sections/sections";

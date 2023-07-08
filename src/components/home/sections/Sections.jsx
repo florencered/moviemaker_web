@@ -1,11 +1,8 @@
-// this section is similar to the one in the homepage but according to the figma design the slider needs to be rendered horizontally hence this is made into seprate component
-// only for the Connection_Call page
-
 import React, { useState } from "react";
 import { FaRegCircleDot } from "react-icons/fa6";
-import Radius from "../home/sections/dist/sliderComp";
-import RadioButton from "../home/sections/domain/RadioButtons";
-import Location from "../home/sections/location/Location";
+import Radius from "./dist/sliderComp";
+import RadioButton from "../sections/domain/RadioButtons";
+import Location from "./location/Location";
 
 function Section({ isClicked, toggleDropdown }) {
   const [showRadius, setShowRadius] = useState(false);
@@ -14,8 +11,8 @@ function Section({ isClicked, toggleDropdown }) {
   return (
     <>
       <div className="flex lg:flex-row md:flex-col sm:flex-col items-center">
-        <div className="flex md:flex-col sm:flex-col p-2 ">
-          <div class="flex flex-row mt-4 space-x-6">
+        <div className="flex md:flex-col sm:flex-col pb-3 pt-3 ">
+          <div class="flex flex-row mt-4 space-x-6 ml-32">
             <button>
               <div class="bg-[#A6A5A2] font-sans font-semibold hover:bg-[#E7DA95] focus:bg-[#E7DA95] active:bg-[#E7DA95] rounded-lg px-3 py-1 items-center">
                 All{" "}
@@ -65,7 +62,7 @@ function Section({ isClicked, toggleDropdown }) {
             {showDomain && (
               <div className="pt-2 flex flex-row ">
                 {" "}
-                <div className="lg:w-[1100px] xs:w-1/4 md:w-3/4">
+                <div className="absolute z-50 xs:w-1/4 md:w-3/4 ml-32">
                   <RadioButton />
                 </div>{" "}
               </div>
@@ -76,21 +73,21 @@ function Section({ isClicked, toggleDropdown }) {
             {showLocation && (
               <div className="pt-4">
                 {" "}
-                <div className="">
+                <div className="ml-32">
                   <Location />
                 </div>{" "}
               </div>
             )}{" "}
           </div>{" "}
-        </div>{" "}
-        <div>
-          {" "}
-          {showRadius && (
-            <div className=" flex lg:pl-8 md:pt-4 sm:pt-4">
-              {" "}
-              <Radius />{" "}
-            </div>
-          )}{" "}
+          <div>
+            {" "}
+            {showRadius && (
+              <div className="ml-32 pt-5">
+                {" "}
+                <Radius />{" "}
+              </div>
+            )}{" "}
+          </div>{" "}
         </div>{" "}
       </div>{" "}
     </>

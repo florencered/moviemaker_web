@@ -64,3 +64,470 @@
 .info{
     @apply py-1
 }
+
+/*About us styling*/
+.aboutus-l {
+  background-color: #fffadd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutus-l .div {
+  background-color: #fffadd;
+  border: 1px none;
+  height: 982px;
+  position: relative;
+  width: 1512px;
+}
+
+.aboutus-l .who-are-we {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 38.1px;
+  font-weight: 700;
+  left: 388px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 165px;
+}
+
+.aboutus-l .what-can-we-do-for {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 38.1px;
+  font-weight: 700;
+  left: 655px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 500px;
+}
+
+.aboutus-l .about-us {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 48.9px;
+  font-weight: 700;
+  left: 773px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 59px;
+}
+
+.aboutus-l .overlap {
+  background: linear-gradient(180deg, rgb(211, 196, 114) 0%, rgba(211, 196, 114, 0) 100%);
+  border-radius: 19.26px;
+  height: 309px;
+  left: 325px;
+  position: absolute;
+  top: 602px;
+  width: 360px;
+}
+
+.aboutus-l .ellipse {
+  background-color: #645d5d;
+  border-radius: 50px;
+  height: 100px;
+  left: 130px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+}
+
+.aboutus-l .egestas-pellentesque {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 155px;
+  width: 252px;
+}
+
+.aboutus-l .overlap-group {
+  background: linear-gradient(180deg, rgb(211, 196, 114) 0%, rgba(211, 196, 114, 0) 100%);
+  border-radius: 19.26px;
+  height: 309px;
+  left: 706px;
+  position: absolute;
+  top: 606px;
+  width: 360px;
+}
+
+.aboutus-l .ellipse-2 {
+  background-color: #645d5d;
+  border-radius: 50px;
+  height: 100px;
+  left: 130px;
+  position: absolute;
+  top: 34px;
+  width: 100px;
+}
+
+.aboutus-l .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 151px;
+  width: 252px;
+}
+
+.aboutus-l .overlap-2 {
+  background: linear-gradient(180deg, rgb(211, 196, 114) 0%, rgba(211, 196, 114, 0) 100%);
+  border-radius: 19.26px;
+  height: 309px;
+  left: 1087px;
+  position: absolute;
+  top: 602px;
+  width: 360px;
+}
+
+.aboutus-l .ellipse-3 {
+  background-color: #645d5d;
+  border-radius: 50px;
+  height: 100px;
+  left: 129px;
+  position: absolute;
+  top: 38px;
+  width: 100px;
+}
+
+.aboutus-l .p {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 53px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 158px;
+  width: 252px;
+}
+
+.aboutus-l .rectangle {
+  background-color: #d9d9d9;
+  height: 166px;
+  left: 1239px;
+  position: absolute;
+  top: 254px;
+  width: 154px;
+}
+
+.aboutus-l .volutpat-odio-sed-ac {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 22px;
+  font-weight: 400;
+  left: 388px;
+  letter-spacing: 0;
+  line-height: 31.8px;
+  position: absolute;
+  top: 248px;
+  width: 769px;
+}
+
+.aboutus-l .homepage-navbar {
+  background-color: #f7eaa9;
+  height: 982px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 295px;
+}
+
+.aboutus-l .group {
+  height: 42px;
+  left: 27px;
+  position: absolute;
+  top: 36px;
+  width: 243px;
+}
+
+.aboutus-l .div-wrapper {
+  background-color: #2e2e2e;
+  border-radius: 50px;
+  height: 42px;
+  position: relative;
+  width: 241px;
+}
+
+.aboutus-l .text-wrapper-2 {
+  color: #e0c949;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 42px;
+  left: 24px;
+  letter-spacing: -0.15px;
+  line-height: 9px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 217px;
+}
+
+.aboutus-l .group-2 {
+  height: 713px;
+  left: 17px;
+  position: absolute;
+  top: 196px;
+  width: 271px;
+}
+
+.aboutus-l .overlap-3 {
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 588px;
+  width: 251px;
+}
+
+.aboutus-l .rectangle-2 {
+  background-color: #ffffff;
+  border-radius: 7px;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 241px;
+}
+
+.aboutus-l .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .vector {
+  height: 26px;
+  left: 18px;
+  position: absolute;
+  top: 6px;
+  width: 26px;
+}
+
+.aboutus-l .img {
+  height: 18px;
+  left: 23px;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.aboutus-l .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 19px;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 143px;
+}
+
+.aboutus-l .text-wrapper-5 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 30px;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 46px;
+  width: 202px;
+}
+
+.aboutus-l .text-wrapper-6 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 30px;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  width: 202px;
+}
+
+.aboutus-l .vector-2 {
+  height: 19px;
+  left: 22px;
+  position: absolute;
+  top: 50px;
+  width: 19px;
+}
+
+.aboutus-l .vector-3 {
+  height: 20px;
+  left: 22px;
+  position: absolute;
+  top: 101px;
+  width: 20px;
+}
+
+.aboutus-l .text-wrapper-7 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 201px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .add-icon-filled {
+  height: 25px;
+  left: 19px;
+  position: absolute;
+  top: 254px;
+  width: 25px;
+}
+
+.aboutus-l .text-wrapper-8 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 255px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .text-wrapper-9 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 303px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .text-wrapper-10 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 642px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .text-wrapper-11 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 110px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 688px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .list {
+  height: 24px;
+  left: 20px;
+  position: absolute;
+  top: 642px;
+  width: 24px;
+}
+
+.aboutus-l .bell {
+  height: 24px;
+  left: 19px;
+  position: absolute;
+  top: 201px;
+  width: 24px;
+}
+
+.aboutus-l .icons-comment-line {
+  height: 26px;
+  left: 19px;
+  position: absolute;
+  top: 149px;
+  width: 26px;
+}
+
+.aboutus-l .text-wrapper-12 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 150px;
+  white-space: nowrap;
+  width: 201px;
+}
+
+.aboutus-l .ellipse-4 {
+  border: 2px solid;
+  border-color: #000000;
+  border-radius: 13.5px;
+  height: 27px;
+  left: 18px;
+  position: absolute;
+  top: 301px;
+  width: 27px;
+}
+
+.aboutus-l .icons-sign-out-line {
+  height: 25px !important;
+  left: 18px !important;
+  position: absolute !important;
+  top: 688px !important;
+  width: 25px !important;
+}

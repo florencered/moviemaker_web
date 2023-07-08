@@ -7,6 +7,7 @@ import Home from "./components/home/home";
 import Explore from "./components/explore/explore.jsx";
 import AboutUs from "./components/aboutUs/aboutUs";
 import Notifications from "./components/notifications/notifications";
+import myProfile from "./components/myProfile/myProfile";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/domainpage" element={<Domainpage />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/myProfile" element={<myProfile />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/connectionCalls" element={<Call />} />{" "}
         </Routes>

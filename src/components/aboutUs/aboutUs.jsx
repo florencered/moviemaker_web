@@ -1,19 +1,19 @@
 import React from 'react'
-import Nav from "./sidebar/sidebar";
+import Sidebar from "../home/sidebar/sidebar";
 
 
-function aboutUs(){
+function AboutUs(){
     
   return (
    
     <>
-    <div className="App flex flex-row">
-        <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
-          <Nav> </Nav>{" "}
+
+
+        <div className="App flex flex-row aboutus-l">
+        <div class="basis-1/5 bg-[#F7EAA9] rounded-r-3xl my-2">
+           <Sidebar/>
         </div>{" "}
-        </div>{" "}
-        <div className="aboutus-l">
-        
+  
         <div className="div">
         <div className="who-are-we">Who Are We ?</div>
         <div className="rectangle" />
@@ -39,13 +39,13 @@ function aboutUs(){
             Libero At
           </p>
         </div>
-        <div className="overlap-2">
+        {/* <div className="overlap-2">
           <div className="ellipse-3" />
           <p className="p">
             Egestas Pellentesque Eget Libero At A. Egestas Pellentesque Eget Libero At A.egestas Pellentesque Eget
             Libero At
           </p>
-        </div>
+        </div> */}
         
         </div>
         </div>
@@ -54,4 +54,4 @@ function aboutUs(){
   )
 }
 
-export default aboutUs
+export default AboutUs

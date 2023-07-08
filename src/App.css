@@ -79,15 +79,15 @@
   border: 1px none;
   height: 982px;
   position: relative;
-  width: 1512px;
+  width: 100vw;
 }
 
-.aboutus-l .who-are-we {
+.aboutus-l .who-are-we  {
   color: #000000;
   font-family: "Inter-Bold", Helvetica;
   font-size: 38.1px;
   font-weight: 700;
-  left: 388px;
+  left: 300px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -111,7 +111,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 48.9px;
   font-weight: 700;
-  left: 773px;
+  left: 700px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;

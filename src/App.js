@@ -5,7 +5,7 @@ import "./App.css";
 import Call from "./components/connectionCalls/connectionCalls";
 import Home from "./components/home/home";
 import Explore from "./components/explore/explore.jsx";
-import aboutUs from "./components/aboutUs/aboutUs";
+import AboutUs from "./components/aboutUs/aboutUs";
 import Notifications from "./components/notifications/notifications";
 
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/domainpage" element={<Domainpage />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/aboutUs" element={<aboutUs />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/connectionCalls" element={<Call />} />{" "}
         </Routes>

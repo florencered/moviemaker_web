@@ -2,7 +2,7 @@
 import React from "react";
 import Sections from "./HorizontalSection.jsx";
 import Card from "../home/sections/dist/dynamicCards.jsx";
-import SideBar from "../home/sidebar/sidebar.js";
+import SideBar from "../home/sidebar/Sidebar.jsx";
 
 function connectionCalls() {
   return (

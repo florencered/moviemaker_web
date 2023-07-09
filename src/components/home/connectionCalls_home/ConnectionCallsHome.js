@@ -7,7 +7,7 @@ import {CiMapPin} from 'react-icons/ci';
 // import {BsFillSendFill} from 'react-icons/bs';
 // import Modal from "react-modal";
 
-function ConnectionCalls_home() {
+function ConnectionCallsHome() {
   const [isLiked, setIsLiked] = useState(false);
   const [isMarked, setIsMarked] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -173,4 +173,4 @@ function ConnectionCalls_home() {
   )
 }
 
-export default ConnectionCalls_home
+export default ConnectionCallsHome

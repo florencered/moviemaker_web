@@ -1,23 +1,26 @@
-import "./App.css";
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Domainpage from "./components/home/sections/domain/Domainpage";
-
-import Home from "./components/home/home";
-import Explore from "./components/explore/explore.jsx";
-import Notifications from "./components/notifications/notifications"
+import "./App.css";
+import Call from "./components/connectionCalls/ConnectionCalls";
+import Home from "./components/home/Home";
+import Explore from "./components/explore/Explore";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Notifications from "./components/notifications/Notifications";
 
 function App() {
   return (
     <div className="App bg-[#FFFADD]">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/domainpage" element={<Domainpage />} />
-          <Route path="/Explore" element={<Explore />} />
-          <Route path="/notifications" element={<Notifications/>}/>
-        </Routes>
-      </BrowserRouter>
+          <Route path="/home" element={<Home />} />{" "}
+          <Route path="/domainpage" element={<Domainpage />} />{" "}
+          <Route path="/explore" element={<Explore />} />{" "}
+          <Route path="/aboutUs" element={<AboutUs />} />{" "}
+          <Route path="/notifications" element={<Notifications />} />{" "}
+          <Route path="/connectionCalls" element={<Call />} />{" "}
+        </Routes>{" "}
+      </BrowserRouter>{" "}
     </div>
   );
 }

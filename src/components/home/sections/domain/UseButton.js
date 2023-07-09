@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const UseButtonGroup = () => {
+const UseButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [selectedValue, setSelectedValue] = useState("");
@@ -18,4 +18,4 @@ const UseButtonGroup = () => {
   return [isOpen, isClicked, toggleDropdown, selectedValue, handleValueChange];
 };
 
-export default UseButtonGroup;
+export default UseButton;

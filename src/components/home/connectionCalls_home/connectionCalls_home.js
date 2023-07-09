@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {SlOptionsVertical} from 'react-icons/sl';
 import {CiMapPin} from 'react-icons/ci';
-import {BsFillBookmarkFill} from 'react-icons/bs';
-import {AiTwotoneHeart} from 'react-icons/ai';
-import {FaComment} from 'react-icons/fa';
-import {BsFillSendFill} from 'react-icons/bs';
-import Modal from "react-modal";
+// import {BsFillBookmarkFill} from 'react-icons/bs';
+// import {AiTwotoneHeart} from 'react-icons/ai';
+// import {FaComment} from 'react-icons/fa';
+// import {BsFillSendFill} from 'react-icons/bs';
+// import Modal from "react-modal";
 
 function ConnectionCalls_home() {
   const [isLiked, setIsLiked] = useState(false);

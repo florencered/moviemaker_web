@@ -3,9 +3,9 @@ import RadioButtons from "./RadioButtons";
 import PostCard from "./Domainpost";
 import Heading from "../../Heading/Heading";
 import Carousel from "../../caro/Carousel";
-import Post from "../../connectionCalls_home/connectionCalls_home";
+import Post from "../../connectionCalls_home/ConnectionCalls_home";
 import Sections from "../../sections/Sections";
-import useButtonGroup from "./useButtonGroup";
+import useButtonGroup from "./UseButtonGroup";
 
 const DamainMain = () => {
   const [isOpen, isClicked, toggleDropdown, selectedValue, handleValueChange] =

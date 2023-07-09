@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Domainpage from "./components/home/sections/domain/Domainpage";
 import "./App.css";
-import Call from "./components/connectionCalls/connectionCalls";
+import Call from "./components/connectionCalls/ConnectionCalls";
 import Home from "./components/home/Home";
 import Explore from "./components/explore/Explore";
-import AboutUs from "./components/aboutUs/aboutUs";
-import Notifications from "./components/notifications/Notifications.jsx";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Notifications from "./components/notifications/Notifications";
 
 function App() {
   return (

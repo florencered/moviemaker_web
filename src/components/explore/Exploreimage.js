@@ -1,5 +1,5 @@
 import React from "react";
-import {Imagedatas} from "./data/images";
+import {Imagedatas} from "./data/Images";
 
 const Exploreimage = () => {
 

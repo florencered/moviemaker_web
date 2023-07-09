@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TopCities } from "./TopCities.jsx";
+import { TopCities } from "./TopCities";
 import { GoSearch } from "react-icons/go";
 
 const Location = () => {

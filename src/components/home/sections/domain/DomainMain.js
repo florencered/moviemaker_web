@@ -3,9 +3,9 @@ import RadioButtons from "./RadioButtons";
 import PostCard from "./Domainpost";
 import Heading from "../../Heading/Heading";
 import Carousel from "../../caro/Carousel";
-import Post from "../../connectionCalls_home/connectionCalls_home";
-import Sections from "../../sections/sections";
-import useButtonGroup from "./useButtonGroup";
+import Post from "../../connectionCalls_home/ConnectionCalls_home";
+import Sections from "../../sections/Sections";
+import useButtonGroup from "./UseButtonGroup";
 
 const DamainMain = () => {
   const [isOpen, isClicked, toggleDropdown, selectedValue, handleValueChange] =
@@ -14,7 +14,7 @@ const DamainMain = () => {
   return (
     <div className="flex-col relative">
       <Heading />
-      <Sections isClicked={isClicked} toggleDropdown={toggleDropdown} />
+      <Sections isClicked={isClicked} toggleDropdown={toggleDropdown} />{" "}
       {isOpen && (
         <div className="z-96 items-center justify-center display: block;">
           <RadioButtons
@@ -23,10 +23,10 @@ const DamainMain = () => {
             className="max-w-md"
           />
         </div>
-      )}
+      )}{" "}
       <Carousel />
       <Post />
-      <PostCard selectedValue={selectedValue} />
+      <PostCard selectedValue={selectedValue} />{" "}
     </div>
   );
 };

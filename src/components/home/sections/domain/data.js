@@ -9,42 +9,50 @@ import james from "./Domain/images/james.jpg";
 export const TypeContent = [
   {
     username: "John",
+    nickname: "jonny",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     userimg: Act1,
   },
   {
     username: "Peter",
+    nickname: "bobby",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Act2,
   },
   {
     username: "Sarah",
+    nickname: "sa",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Act3,
   },
 
   {
     username: "Itachi",
+    nickname: "the hero of hidden leaf",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Anime2,
   },
   {
     username: "David",
+    nickname: "dav",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Anime1,
   },
   {
     username: "Linda",
+    nickname: "lin lin",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Anime3,
   },
   {
     username: "Alex",
+    nickname: "alex",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: Raj,
   },
   {
     username: "Mike",
+    nickname: "mike",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     userimg: james,
   },

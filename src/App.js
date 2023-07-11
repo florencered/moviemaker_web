@@ -16,7 +16,6 @@ function App() {
           <Route path="/Explore" element={<Explore />} />
         </Routes>
       </BrowserRouter>
-      <ModalShare />
     </div>
   );
 }

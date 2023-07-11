@@ -5,7 +5,6 @@ import Domainpage from "./components/home/sections/domain/Domainpage";
 import "./App.css";
 import Home from "./components/home/home";
 import Explore from "./components/explore/explore.jsx";
-import ModalShare from "./components/home/sections/domain/ModalShare";
 
 function App() {
   return (

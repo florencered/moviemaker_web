@@ -8,7 +8,7 @@ import Carousel from "./caro/MyCr";
 import useButtonGroup from "./sections/domain/UseButton";
 // import RadioButtons from "./sections/domain/RadioButtons";
 import Sections from "./sections/Sections";
-import PostCard from "./sections/domain/Domainpost";
+import PostMain from "./sections/domain/PostMain";
 
 function Home() {
   const [isOpen, isClicked, toggleDropdown] = useButtonGroup();
@@ -23,7 +23,7 @@ function Home() {
           <Heading> </Heading> <Sections />
           <Carousel />
           <Post />
-          <PostCard />
+          <PostMain />
         </div>{" "}
         <div class="basis-1/4">
           <Profile> </Profile> <ProfileList> </ProfileList>{" "}

@@ -6,6 +6,7 @@ import Carousel from "../../caro/MyCr";
 import Post from "../../connectionCalls_home/ConnectionCallsHome";
 import Sections from "../../sections/Sections";
 import useButtonGroup from "./UseButton";
+import { TypeContent } from "./data";
 
 const DamainMain = () => {
   const [isOpen, isClicked, toggleDropdown, selectedValue, handleValueChange] =
@@ -26,7 +27,11 @@ const DamainMain = () => {
       )}{" "}
       <Carousel />
       <Post />
-      <PostCard selectedValue={selectedValue} />{" "}
+      {TypeContent.map((user) => (
+        <div key={user.id}>
+          <PostCard id={user.id} />
+        </div>
+      ))}
     </div>
   );
 };

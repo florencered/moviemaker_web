@@ -28,7 +28,7 @@ const RadioButtons = ({ selectedValue }) => {
 
   //in the second div make it absolute if you want the domain to overlap
   return (
-    <div className=" items-center  display: block;">
+    <div className="absolute items-center w-[28rem] z-[10000] display: block;">
       <div className="flex flex-col  bg-radio rounded-lg ">
         <div className="text-black font-medium border-b-2 border-[#b1991e] text-center  border-color:#b1991e">
           Select Domain{" "}
@@ -44,7 +44,7 @@ const RadioButtons = ({ selectedValue }) => {
               value={type.name}
               checked={value === type.name}
               onChange={handleValueChange}
-              className="appearance-none w-4 h-4 border-4 border-white rounded-full bg-white hidden checked:block checked:bg-black checked:border-white focus:outline-none "
+              className="appearance-none w-4 h-4 border-4 border-white rounded-full bg-white hidden checked:block checked:bg-black  checked:border-black focus:outline-none "
             />
           </label>
         ))}{" "}

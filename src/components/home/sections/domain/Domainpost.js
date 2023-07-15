@@ -1,29 +1,24 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-
+import React from "react";
+import ModalShare from "./ModalShare";
 import { TypeContent } from "./data";
+import ModalComment from "./ModalComment";
+import ModalReport from "./ModalReport";
+import usePostHook from "./usePostHook";
 
 function Post() {
-  const [isLiked, setIsLiked] = useState(false);
-  const [isMarked, setIsMarked] = useState(false);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const likeButton = () => {
-    setIsLiked(!isLiked);
-  };
-
-  const handlemarkbutton = () => {
-    setIsMarked(!isMarked);
-  };
-
-  const handleModalOpen = () => {
-    setModalIsOpen(true);
-  };
-
-  const handleModalClose = () => {
-    setModalIsOpen(false);
-  };
-
+  const [
+    isLiked,
+    isMarked,
+    isModalOpen,
+    isOpenShare,
+    isRepopen,
+    handleOpenModal,
+    handleCloseModal,
+    toggleModalShare,
+    likeButton,
+    handlemarkbutton,
+    handleReport,
+  ] = usePostHook();
   return (
     <div className="p-4 rounded-2xl  ml-28">
       <div className="flex flex-col  rounded-2xl max-w-md">
@@ -40,7 +35,7 @@ function Post() {
                   alt=""
                 />
               </div>
-              <div className="text-left">
+              <div>
                 <span className="text-sm font-semibold antialiased block leading-tight text-left">
                   {" "}
                   {user.username}
@@ -48,6 +43,27 @@ function Post() {
                 <span className="text-gray-600 text-xs block">
                   Asheville, North Carolina
                 </span>
+              </div>
+
+              <div className="ml-[45%]">
+                <button onClick={handleReport}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-more-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="12" cy="5" r="1"></circle>
+                    <circle cx="12" cy="19" r="1"></circle>
+                  </svg>
+                </button>
               </div>
             </div>
             <div className="postpic">
@@ -82,7 +98,7 @@ function Post() {
                   {/* Message Button */}
                   <button
                     className="transparent-button"
-                    onClick={handleModalOpen}
+                    onClick={handleOpenModal}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +117,10 @@ function Post() {
                   </button>
 
                   {/* Send Button */}
-                  <button className="transparent-button">
+                  <button
+                    className="transparent-button"
+                    onClick={toggleModalShare}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -123,7 +142,7 @@ function Post() {
                 {/* Bookmark Button */}
                 <div className="svg">
                   <button
-                    className="transparent-button"
+                    className="transparent-button mr-2"
                     onClick={handlemarkbutton}
                   >
                     <svg
@@ -154,13 +173,9 @@ function Post() {
                 {user.description}
               </div>
             </div>
-
-            {/* Modal */}
-            <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={handleModalClose}
-              className="flex justify-center items-center w-1/2 h-1/2 translate-x-1/2 translate-y-1/2 bg-radio delay-300 backdrop-blur-xl rounded-sm"
-            ></Modal>
+            <ModalReport isOpen={isRepopen} onClose={handleReport} />
+            <ModalComment isOpen={isModalOpen} onClose={handleCloseModal} />
+            <ModalShare isOpen={isOpenShare} onClose={toggleModalShare} />
           </div>
         ))}
       </div>

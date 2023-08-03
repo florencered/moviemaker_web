@@ -65,3 +65,253 @@
     @apply py-1
 }
 
+/*Profile styling*/
+
+.l {
+  @apply bg-[#fffadd] flex flex-row justify-center w-full;
+}
+.l .profilepage-l {
+  @apply bg-[#fffadd] border h-[982px] overflow-hidden w-[1512px] border-none;
+}
+.l .overlap {
+  @apply h-[1135px] relative;
+}
+.l .overlap-group {
+  @apply h-[252px] absolute w-[909px] left-[295px] top-10;
+}
+.l .group {
+  @apply h-[251px] absolute w-[909px] left-0 top-0;
+}
+.l .overlap-group-wrapper {
+  @apply h-[121px] absolute w-[656px] left-[259px] top-[72px];
+}
+.l .div {
+  @apply bg-[#f7eaa9] h-[121px] relative w-[648px] rounded-[23.63px];
+}
+.l .element-likes {
+  @apply text-black text-[25px] font-semibold h-[78px] tracking-[-0.18px] leading-[10.6px] absolute text-center w-[115px] left-[508px] top-[45px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .element-following {
+  @apply text-black text-[25px] font-semibold h-[78px] tracking-[-0.18px] leading-[10.6px] absolute text-center w-[187px] left-[316px] top-[45px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .element-followers {
+  @apply text-black text-[25px] font-semibold h-20 tracking-[-0.18px] leading-[10.6px] absolute text-center w-[129px] left-[171px] top-[45px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .element-posts {
+  @apply text-black text-[25px] font-semibold h-[78px] tracking-[-0.18px] leading-[10.6px] absolute text-center w-[77px] left-[34px] top-[45px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .overlap-2 {
+  @apply h-[33px] absolute w-[260px] left-0 top-0;
+}
+.l .text-wrapper {
+  @apply text-[#978839] text-[40px] font-semibold h-[33px] tracking-[-0.15px] leading-[9px] absolute text-center w-[248px] left-0 top-0;
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .vector {
+  @apply h-[15px] absolute w-6 left-[236px] top-[13px];
+}
+.l .group-2 {
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-[179px] absolute w-[179px] left-[22px] top-[72px];
+}
+.l .frame {
+  @apply h-11 absolute w-[146px] left-[265px] top-52;
+}
+.l .div-wrapper-1 {
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.l .text-wrapper-2 {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-[7px];
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .overlap-wrapper {
+  @apply h-11 absolute w-[146px] left-[265px] top-52;
+}
+.l .div-wrapper {
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.l .text-wrapper-3 {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-3.5;
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .over-wrapper {
+  @apply h-[100px] absolute w-[146px] left-[433px] top-[210px];
+}
+.l .divi-wrapper {
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.l .text-wrap {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-3.5;
+  font-family: "Inter-Regular", Helvetica;
+}
+.box {
+  @apply bg-transparent flex flex-row justify-center w-full;
+}
+.box .group-wrapper {
+  @apply h-[62.87px] overflow-x-hidden relative w-[1217px] border-0 border-none;
+}
+.box .group {
+  @apply h-[63px] fixed w-[1217px] left-0 top-0;
+}
+.box .vector {
+  @apply h-[34px] absolute w-[33px] left-[84px] top-0;
+}
+.box .img {
+  @apply h-[34px] absolute w-[34px] left-[290px] top-0;
+}
+.box .vector-2 {
+  @apply h-[34px] absolute w-[34px] left-[497px] top-0;
+}
+.box .vector-3 {
+  @apply h-[34px] absolute w-[42px] left-[704px] top-0;
+}
+.box .material-symbols {
+  @apply h-[34px] absolute w-[34px] left-[1103px] top-0;
+}
+.box .material-symbols-2 {
+  @apply h-[34px] absolute w-[34px] left-[912px] top-0;
+}
+.box .line {
+  @apply h-1.5 absolute w-[1219px] -left-0.5 top-[58px];
+}
+.box .overlap-group {
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.box .text-wrapper {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-[7px];
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .group-3 {
+  @apply h-11 absolute w-[146px] left-[592px] top-[211px];
+}
+.l .overlap-3{
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.l .text-wrapper-4 {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-3.5;
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .img {
+  @apply h-11 absolute w-36 left-[757px] top-[207px];
+}
+.l .group-4 {
+  @apply h-11 absolute w-[146px] left-[750px] top-[211px];
+}
+.l .ov{
+  @apply bg-[url(./assets/rectangle-5938.jpg)] bg-[100%_100%] h-11 relative w-36;
+}
+.l .text-wrapper-5 {
+  @apply text-black text-xl font-normal h-[31px] tracking-[-0.15px] leading-[9px] absolute text-center w-[131px] left-[7px] top-3.5;
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .overlap-4 {
+  @apply h-[1135px] absolute w-[1468px] left-0 top-0;
+}
+.l .group-5 {
+  @apply h-[82px] absolute w-[533px] left-[263px] top-80;
+}
+.l .text-wrapper-6 {
+  @apply text-black text-3xl font-semibold h-[30px] tracking-[-0.14px] leading-[8.1px] absolute text-center w-[303px] left-0 top-0;
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .text-wrapper-7 {
+  @apply text-[#525252ba] text-[25px] font-medium h-3.5 tracking-[-0.14px] leading-[8.1px] absolute w-[114px] left-[59px] top-[37px];
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .p {
+  @apply text-black text-xl font-medium tracking-[-0.14px] leading-[8.1px] absolute w-[468px] left-[59px] top-[70px];
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .group-6 {
+  @apply h-[584px] absolute w-[1200px] left-[268px] top-[551px];
+}
+.l .overlap-5 {
+  @apply h-[584px] relative w-[1184px];
+}
+.l .rectangle-2 {
+  @apply bg-[#f7eaa9] h-[584px] absolute w-[1046px] rounded-[10px] left-[138px] top-0;
+}
+.l .text-wrapper-8 {
+  @apply text-[#7e7231] text-3xl font-semibold h-[34px] tracking-[-0.15px] leading-[9px] absolute w-[970px] left-[164px] top-[19px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .text-wrapper-9 {
+  @apply text-black text-sm font-bold h-4 tracking-[-0.15px] leading-[9px] absolute text-center w-[419px] left-0 top-[50px];
+  font-family: "Inter-Bold", Helvetica;
+}
+.l .text-wrapper-10 {
+  @apply text-[#8d8d8d] text-sm font-medium h-4 tracking-[-0.15px] leading-[9px] absolute text-center w-64 left-[63px] top-[67px];
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .text-wrapper-11 {
+  @apply text-[#978839] text-lg font-semibold h-[35px] tracking-[-0.15px] leading-[9px] absolute text-center w-[970px] left-[70px] top-[75px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .group-7 {
+  @apply h-[156px] absolute w-[999px] left-[164px] top-[99px];
+}
+.l .group-8 {
+  @apply h-6 absolute w-[995px] left-0 top-5;
+}
+.l .overlap-group-2 {
+  @apply bg-[url(./assets/Group\_76665.png)] bg-[100%_100%] h-6 relative w-[993px];
+}
+.l .text-wrapper-12 {
+  @apply text-black text-[11px] font-normal h-[17px] tracking-[-0.15px] leading-[9px] absolute w-[964px] left-[21px] top-[5px];
+  font-family: "Inter-Regular", Helvetica;
+}
+.l .group-9 {
+  @apply h-6 absolute w-[995px] left-0 top-[132px];
+}
+.l .overlap-6 {
+  @apply bg-[url(./assets/Group\_76665.png)] bg-[100%_100%] h-6 relative w-[993px];
+}
+.l .text-wrapper-13 {
+  @apply text-[#978839] text-[13px] font-medium h-4 tracking-[-0.15px] leading-[9px] absolute w-[646px] left-0 top-[42px];
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .group-10 {
+  @apply h-6 absolute w-[995px] left-0 top-[72px];
+}
+.l .overlap-7 {
+  @apply bg-[url(./assets/Group\_76665.png)] bg-[100%_100%] h-6 relative w-[993px];
+}
+.l .text-wrapper-14 {
+  @apply text-[#978839] text-[13px] font-medium h-4 tracking-[-0.15px] leading-[9px] absolute w-[646px] left-0 top-[100px];
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .text-wrapper-15 {
+  @apply text-[#978839] text-[13px] font-medium h-4 tracking-[-0.15px] leading-[9px] absolute w-[620px] left-0 -top-2.5;
+  font-family: "Inter-Medium", Helvetica;
+}
+.l .text-wrapper-16 {
+  @apply text-[#978839] text-lg font-semibold h-[35px] tracking-[-0.15px] leading-[9px] absolute text-center w-[970px] left-[110px] top-[270px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .text-wrapper-17 {
+  @apply text-[#978839] text-lg font-semibold h-[35px] tracking-[-0.15px] leading-[9px] absolute text-center w-[970px] left-[110px] top-[330px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .group-11 {
+  @apply h-6 absolute w-[995px] left-[164px] top-[360px];
+}
+.l .overlap-8 {
+  @apply bg-[url(./assets/Group\_76665.png)] bg-[100%_100%] h-6 relative w-[993px];
+}
+.l .group-12 {
+  @apply h-6 absolute w-[995px] left-[164px] top-[393px];
+}
+.l .overlap-9 {
+  @apply bg-[url(./assets/Group\_76665.png)] bg-[100%_100%] h-6 relative w-[993px];
+}
+.l .text-wrapper-18 {
+  @apply text-[#978839] text-lg font-semibold h-[35px] tracking-[-0.15px] leading-[9px] absolute text-center w-[970px] left-44 top-[423px];
+  font-family: "Inter-SemiBold", Helvetica;
+}
+.l .text-wrapper-19 {
+  @apply text-black text-[13px] font-medium tracking-[-0.15px] leading-[normal] absolute w-[994px] left-[164px] top-[280px];
+  font-family: "Inter-Medium", Helvetica;
+}

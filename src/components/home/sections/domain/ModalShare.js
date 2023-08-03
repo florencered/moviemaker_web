@@ -14,10 +14,30 @@ const ModalShare = ({ isOpen, onClose }) => {
     >
       <div className="flex h-[100%]  bg-postcol w-[100%] rounded-3xl p-2 text-center">
         <div className="flex flex-col w-[100%]">
-          <div className="h-8 border-b-2 text-2xl text-[#C1AD42]  border-[#C6B34E] font-bold items-center">
-            Share
+          <div className="flex flex-row w-[100%] border-b-2 border-[#C6B34E] ">
+            <div className="h-8  text-2xl text-[#C1AD42] w-[90%] font-bold items-center">
+              Share
+            </div>
+            <div className="items-center">
+              <button onClick={onClose}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-x"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
           </div>
-
           <div className="flex flex-row m-2">
             <div className="pr-6">
               <span className="font-semibold text-xl  ">To: </span>
@@ -33,7 +53,7 @@ const ModalShare = ({ isOpen, onClose }) => {
           <div className="text-xl text-left m-2 font-semibold">Suggested</div>
 
           <div className="scroll-section h-max  mx-2  overflow-y-scroll no-scrollbar">
-            <div className="flex flex-col items-center w-[97%] py-1 m-2">
+            <div className="flex flex-col items-center w-[100%] py-1 ">
               {TypeContent.map((item) => (
                 <div key={item.id} className="flex w-[100%] py-1 items-center">
                   <div className="bg-[#C6B34E] p-0.5 rounded-full h-11 w-12">
@@ -55,7 +75,7 @@ const ModalShare = ({ isOpen, onClose }) => {
                         {item.nickname}
                       </span>
                     </div>
-                    <div className="mr-10">
+                    <div className="mr-10 ">
                       <input
                         type="checkbox"
                         className=" border-black h-5 w-5 rounded-full cursor-pointer bg-transparent"

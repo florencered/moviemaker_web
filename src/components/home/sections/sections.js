@@ -6,9 +6,9 @@ function Sections({ isClicked, toggleDropdown }) {
 	const [loc, setLoc] = useState(false);
 
 	return (
-		<>
+		<div>
 			<div className="flex flex-row mt-4 mb-8 space-x-6">
-				<button className="flex bg-[#A6A5A2] hover:bg-[#E7DA95] py-2 ml-32 rounded-lg px-4 font-semibold">
+				<button className="flex bg-[#A6A5A2] hover:bg-[#E7DA95] py-2 rounded-lg px-4 font-semibold">
 					All
 				</button>
 				<button className="flex bg-[#A6A5A2] hover:bg-[#E7DA95] py-2 rounded-lg px-4 font-semibold">
@@ -36,7 +36,7 @@ function Sections({ isClicked, toggleDropdown }) {
 				</button>
 			</div>
 			<div className="ml-20">{loc && <Location />}</div>
-		</>
+		</div>
 	);
 }
 

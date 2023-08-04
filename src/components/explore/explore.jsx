@@ -11,7 +11,7 @@ const Explora = () => {
         <Nav props1="/images/logo.png"></Nav>
       </div>
       <div className="flex justify-center ml-3 pl-4">
-        <div>
+        <div className="content-start">
           <div className="place-content-start mt-4 ">
             <h1 className=" shadow-black">
               <img src="/images/Explorelogo.png" alt="Heading" />
@@ -23,7 +23,7 @@ const Explora = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="searchbar focus:outline-none placeholder:text-[#5B4E07]"
+                className="bg-[#E5D684] px-3 py-2.5 rounded-xl w-full text-sm focus:outline-none placeholder:text-[#5B4E07]"
               />
             </div>
             <Exploreimage />

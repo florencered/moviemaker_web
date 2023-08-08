@@ -1,125 +1,69 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Modal from "react-modal";
-import Itachi from "./Domain/images/Anime1.jpg";
-import Actor from "./Domain/images/raj.jpg";
-import { useState } from "react";
-const ModalComment = ({ isOpen, onClose }) => {
-  const [isLiked, setIsLiked] = useState(false);
-  const likeButton = () => {
-    setIsLiked(!isLiked);
-  };
+import { TypeContent } from "./data";
 
-  const data = [
-    {
-      id: 1,
-      username: "samrzkhan",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: ["3d", "likes", "Replay"],
-      imageSrc: Itachi,
-    },
-    {
-      id: 2,
-      username: "another_user",
-      text: "Another example comment.",
-      tags: ["2d", "likes", "Replay"],
-      imageSrc: Actor,
-    },
-    {
-      id: 3,
-      username: "samrzkhan",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: ["3d", "likes", "Replay"],
-      imageSrc: Itachi,
-    },
-    {
-      id: 4,
-      username: "another_user",
-      text: "Another example comment.",
-      tags: ["2d", "likes", "Replay"],
-      imageSrc: Actor,
-    },
-    {
-      id: 5,
-      username: "another_user",
-      text: "Another example comment.",
-      tags: ["2d", "likes", "Replay"],
-      imageSrc: Actor,
-    },
-    {
-      id: 6,
-      username: "samrzkhan",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: ["3d", "likes", "Replay"],
-      imageSrc: Itachi,
-    },
-    {
-      id: 7,
-      username: "another_user",
-      text: "Another example comment.",
-      tags: ["2d", "likes", "Replay"],
-      imageSrc: Actor,
-    },
-    // Add more objects as needed
-  ];
+const ModalComment = ({ isOpen, onClose, id, isLiked, likeButton }) => {
+  const user = TypeContent.find((user) => user.id === id);
+
+  const handleLike = () => {
+    likeButton(); // Call the likeButton function from props
+  };
 
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Modal"
-      className=" fixed inset-0 absolute flex items-center  w-[65%] align-middle -translate-y-14      h-[80%] bg-postcol  translate-x-1/4 mt-32  justify-center z-50"
+      className="fixed inset-0 absolute flex items-center w-[65%] align-middle -translate-y-14 h-[80%] bg-postcol translate-x-1/4 mt-32 justify-center z-50"
       overlayClassName="fixed inset-0 bg-transparent bg-opacity-50"
     >
-      <div className="flex items-center justify-center  h-[100%] ">
+      <div className="flex items-center justify-center h-[100%]">
         <img
-          src={Itachi}
+          src={user.userimg}
           alt="Image"
-          className="h-full w-full  object-contain"
+          className="h-full w-full object-contain"
         />
       </div>
-      <div className="bg-postcol w-[50%]  h-[100%] ">
-        <div className="flex  flex-row items-center border-3 h-20   border-b-2 border-[#C6B34E] mx-2 ">
-          <div class="bg-[#C6B34E] p-0.5 rounded-full  relative top-1">
-            <a href="#" class="block bg-white p-0.5 rounded-full transform">
+      <div className="bg-postcol w-[50%] h-[100%]">
+        <div className="flex flex-row items-center border-3 h-20 border-b-2 border-[#C6B34E] mx-2">
+          <div className="bg-[#C6B34E] p-0.5 rounded-full relative top-1">
+            <a href="#" className="block bg-white p-0.5 rounded-full transform">
               <img
-                className="h-12 w-12  object-cover rounded-full"
-                src={Itachi}
+                className="h-12 w-12 object-cover rounded-full"
+                src={user.userimg}
                 alt="cute kitty"
               />
             </a>
           </div>
-          <div className=" flex flex-row py-2 justify-between">
-            <div className="px-2 ">
-              <span className="text-sm  font-semibold antialiased block leading-tight text-left">
-                {" "}
-                samrzkhan
+          <div className="flex flex-row py-2 justify-between">
+            <div className="px-2">
+              <span className="text-sm font-semibold antialiased block leading-tight text-left">
+                {user.username}
               </span>
-              <span className="text-gray-600 text-xs   block">
+              <span className="text-gray-600 text-xs block">
                 Asheville, North Carolina
               </span>
             </div>
-
             <div className="flex">
-              <button className="text-center items-center p-1 w-10 h-fit  border-2 border-[#C6B34E] rounded-xl w-28  ">
+              <button className="text-center items-center p-1 w-10 h-fit border-2 border-[#C6B34E] rounded-xl w-28">
                 Follow
               </button>
             </div>
           </div>
         </div>
 
-        <div className="scroll-section h-96  mx-2  overflow-y-scroll no-scrollbar border-b-2  border-[#C6B34E]">
-          <div className=" flex flex-col border-b-2  border-[#C6B34E] h-fit">
-            <p className="text-xs py-1">
-              {" "}
-              <span className="text-sm  font-semibold ">samrzkhan</span> Lorem
+        <div className="scroll-section h-96 mx-2 overflow-y-scroll no-scrollbar border-b-2 border-[#C6B34E]">
+          <div className="flex flex-col border-b-2 border-[#C6B34E] mb-4">
+            <p className="text-sm py-1">
+              <span className="text-sm font-semibold">samrzkhan</span> Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed
               lacus non mi tristique interdum. Nullam eleifend elit at nibh
               eleifend efficitur. Suspendisse non urna in erat pellentesque
               feugiat. Vestibulum lacinia, mi et faucibus consequat, justo massa
               pretium ex.
             </p>
-            <p className="text-xs py-1">
+            <p className="text-sm py-1">
               <span className="text-sm font-semibold">Hashtag</span> Second
               small paragraphLorem ipsum dolor sit amet, consectetur adipiscing
               elit. Praesent sed lacus non mi tristique interdum. Nullam
@@ -128,26 +72,26 @@ const ModalComment = ({ isOpen, onClose }) => {
             </p>
           </div>
 
-          {data.map((item) => (
+          {TypeContent.map((item) => (
             <div
-              className="flex flex-row items-center h-16 py-2 mx-2  "
+              className="flex flex-row items-center h-max  mt-4"
               key={item.id}
             >
               <div className="h-fit">
                 <div className="bg-[#C6B34E] p-0.5 rounded-full h-9 w-9">
                   <a href="#" className="block rounded-full overflow-hidden">
                     <img
-                      className="h-8 w-8  object-cover"
-                      src={item.imageSrc}
+                      className="h-8 w-8 object-cover"
+                      src={item.userimg}
                       alt="User Profile"
                     />
                   </a>
                 </div>
               </div>
 
-              <div className="px-3">
-                <p className="text-xs py-1">
-                  <span className="text-sm font-semibold pr-1">
+              <div className="flex flex-col px-3 ">
+                <p className="text-sm py-1">
+                  <span className="text-sm font-semibold pr-1 py-4">
                     {item.username}
                   </span>
                   {item.text}
@@ -166,9 +110,9 @@ const ModalComment = ({ isOpen, onClose }) => {
         </div>
 
         <div className="flex flex-col mx-2 py-2 items-start">
-          {/* Like Button */}
-          <div className="svgs flex gap-2  ">
-            <button className="transparent-button" onClick={likeButton}>
+          <div className="svgs flex gap-2">
+            {/* Like Button */}
+            <button className="transparent-button" onClick={handleLike}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -224,8 +168,8 @@ const ModalComment = ({ isOpen, onClose }) => {
           </div>
 
           <div className="flex flex-col w-[100%] text-gray-600 text-sm mt-1 border-b-2 border-[#C6B34E]">
-            <span> Liked by riza...</span>
-            <span>1 Day ago </span>
+            <span>Liked by riza...</span>
+            <span>1 Day ago</span>
           </div>
         </div>
 
@@ -237,9 +181,9 @@ const ModalComment = ({ isOpen, onClose }) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-smile mr-2"
           >
             <circle cx="12" cy="12" r="10"></circle>
@@ -249,17 +193,11 @@ const ModalComment = ({ isOpen, onClose }) => {
           </svg>
 
           <input
-            className=" bg-transparent stroke-none border-hidden w-[100%]"
+            className="bg-transparent stroke-none border-hidden w-[100%]"
             placeholder="Add a comment...."
           />
         </div>
       </div>
-      {/* <div class="bg-[#C6B34E] p-0.5 rounded-full ">
-            <a href="#" class="block bg-white p-1 rounded-full transform">
-              <img class="h-16 rounded-full" src={Itachi} alt="cute kitty" />
-            </a>
-          </div>
-          <div className="text-left"></div> */}
     </Modal>
   );
 };

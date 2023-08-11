@@ -7,6 +7,7 @@ import Home from "./components/home/Home";
 import Explore from "./components/explore/Explore";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Notifications from "./components/notifications/Notifications";
+import More from "./components/more/More";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />{" "}
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
+          <Route path="/more" element={<More />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

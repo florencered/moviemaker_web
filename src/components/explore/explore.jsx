@@ -6,7 +6,7 @@ import Sections from "../home/sections/sections.js";
 
 const Explora = () => {
   return (
-    <div className="flex">
+    <div className="flex b">
       <div class="bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
         <Nav props1="/images/logo.png"></Nav>
       </div>

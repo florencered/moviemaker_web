@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SwitchComponent from './toggle';
 
 function Connections() {
   const [RestrictedAccountsVisible, setRestrictedAccountsVisible] = useState(false);
@@ -36,7 +37,7 @@ function Connections() {
 
   const arrowStyle = {
     position: 'absolute',
-    right: '10px', 
+    right: '10px',
   };
 
   const buttonStyle = {
@@ -53,7 +54,7 @@ function Connections() {
         >
           <strong>Restricted Accounts</strong>
           <span style={arrowStyle}>
-          {
+            {
               RestrictedAccountsVisible ? (
                 <img src="images/v2.png" />
               ) : (
@@ -63,17 +64,50 @@ function Connections() {
           </span>
         </button>
         {RestrictedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-          </div>
+          <div style={{ textAlign: "center", marginTop: "30px", marginBottom: "10px" }}>
+          <p style={{ width: "650px" }}>Restrict people from knowing you online/offline status<br />
+            Protect yourself from unwanted interaction <br />
+            without block or unfollow</p>
+          <div style={{ marginLeft: "-200px", marginTop: "25px", marginBottom: "30px" }}>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label></div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label></div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label></div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label></div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}>
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label></div>
+            </div>
+        </div>
         )}
       </div>
 
@@ -84,7 +118,7 @@ function Connections() {
         >
           <strong>Blocked Accounts</strong>
           <span style={arrowStyle}>
-          {
+            {
               BlockedAccountsVisible ? (
                 <img src="images/v2.png" />
               ) : (
@@ -94,16 +128,48 @@ function Connections() {
           </span>
         </button>
         {BlockedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div style={{ textAlign: "center", marginTop: "30px", marginBottom: "10px" }}>
+            <p style={{ width: "650px" }}>Restrict people from knowing you online/offline status<br />
+              Protect yourself from unwanted interaction <br />
+              without block or unfollow</p>
+            <div style={{ marginLeft: "-200px", marginTop: "25px", marginBottom: "30px" }}>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+              <p>Arkaz</p>
+              <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            </div>
           </div>
         )}
       </div>
@@ -115,7 +181,7 @@ function Connections() {
         >
           <strong>Muted Accounts</strong>
           <span style={arrowStyle}>
-          {
+            {
               MutedAccountsVisible ? (
                 <img src="images/v2.png" />
               ) : (
@@ -125,17 +191,49 @@ function Connections() {
           </span>
         </button>
         {MutedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div style={{ textAlign: "center", marginTop: "30px", marginBottom: "10px" }}>
+          <p style={{ width: "650px" }}>Restrict people from knowing you online/offline status<br />
+            Protect yourself from unwanted interaction <br />
+            without block or unfollow</p>
+          <div style={{ marginLeft: "-200px", marginTop: "25px", marginBottom: "30px" }}>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
           </div>
+        </div>
         )}
       </div>
 
@@ -146,7 +244,7 @@ function Connections() {
         >
           <strong>Accounts you follow</strong>
           <span style={arrowStyle}>
-          {
+            {
               AccountsyoufollowVisible ? (
                 <img src="images/v2.png" />
               ) : (
@@ -156,23 +254,55 @@ function Connections() {
           </span>
         </button>
         {AccountsyoufollowVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div style={{ textAlign: "center", marginTop: "30px", marginBottom: "10px" }}>
+          <p style={{ width: "650px" }}>Restrict people from knowing you online/offline status<br />
+            Protect yourself from unwanted interaction <br />
+            without block or unfollow</p>
+          <div style={{ marginLeft: "-200px", marginTop: "25px", marginBottom: "30px" }}>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
+            <p>Arkaz</p>
+            <div style={{ marginLeft: "700px", marginTop: "-25px", marginBottom:"9px" }}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
           </div>
+        </div>
         )}
       </div>
 
 
     </div>
-  );
+      );
 }
 
-export default Connections;
+      export default Connections;

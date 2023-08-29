@@ -159,16 +159,6 @@ const Interactions = () => {
           />
         )}
       </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "426px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
 
       <h2 style={{ marginTop: "25px" }}><strong>Comments</strong></h2>
       <div style={{ marginBottom: "10px",marginTop: "5px"  }}>
@@ -191,17 +181,6 @@ const Interactions = () => {
           />
         )}
       </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "500px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
-
       <h2 style={{ marginTop: "25px" }}><strong>Mentions</strong></h2>
       <div style={{ marginBottom: "10px",marginTop: "5px"  }}>
         <div

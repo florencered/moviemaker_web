@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SwitchComponent from "./toggle";
 
 const RadioGroup = ({ label, options, selectedValue, onChange }) => (
   <div>
@@ -91,7 +92,11 @@ const PushSettings = () => {
         <div style={{marginLeft:"-10px"}}>
             <h2>Push Notifications</h2>
             <p style={{fontSize:"18px", marginLeft:"-82px"}}>Pause all</p>
-            <img src="images/toggle.png" alt="push Icon" style={{ width: "50px", height: "30px", marginLeft:"700px", marginTop:"-34px", marginBottom:"22px" }} />
+            <div style={{marginLeft:"650px", marginTop:"-30px"}}><label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+              </label>
+            </div>
         </div>
       <div style={{ marginBottom: "10px" , marginTop:"10px"}}>
         <div style={{ marginLeft: "8px" }}>

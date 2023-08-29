@@ -34,7 +34,7 @@ function Help() {
   };
 
   return (
-    <div style={{ marginLeft: "90px", width: "400px", marginTop: "50px", textAlign: "left" }}>
+    <div style={{ marginLeft: "90px", width: "400px", marginTop: "50px", textAlign: "left" , color:"black"}}>
       <div style={{ marginBottom: "20px" }}>
         <button
           style={buttonStyle}
@@ -52,9 +52,9 @@ function Help() {
           </span>
         </button>
         {helpCenterVisible && (
-          <div>
-            <p>Click to see FAQs</p>
-            <p>Contact us for more help</p>
+          <div style={{marginTop:"30px", marginBottom:"30px"}}>
+            <p style={{marginBottom:"20px", textDecoration:"underline"}}>Click to see FAQs</p>
+            <p style={{textDecoration:"underline"}}>Contact Us for more help</p>
           </div>
         )}
       </div>
@@ -75,9 +75,9 @@ function Help() {
           </span>
         </button>
         {privacyVisible && (
-          <div>
-            <p>Update your privacy settings</p>
-            <p>Contact us for help</p>
+          <div style={{marginTop:"30px", marginBottom:"30px"}}>
+            <p style={{marginBottom:"20px", textDecoration:"underline"}}>Update your privacy settings</p>
+            <p style={{textDecoration:"underline"}}>Contact us for help</p>
           </div>
         )}
       </div>
@@ -98,8 +98,8 @@ function Help() {
           </span>
         </button>
         {additionalSupportVisible && (
-          <div>
-            <p>Contact us for additional support</p>
+          <div style={{marginTop:"30px", marginBottom:"30px"}}>
+            <p style={{marginBottom:"20px", textDecoration:"underline"}}>Contact for additional support</p>
           </div>
         )}
       </div>

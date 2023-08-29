@@ -112,6 +112,15 @@ function Security1() {
     setLoginActivityVisible(false);
   };
 
+  const inputStyle = {
+    width: '180px',
+    marginBottom:"10px",
+    borderRadius: '7px',
+    border: '1px solid #ccc',
+    backgroundColor: 'white',
+    display:"block"
+  };
+
   const timeAgoTextStyle = {
     color: '#5B4E07',
     marginLeft: '20px',
@@ -146,8 +155,12 @@ function Security1() {
           </span>
         </button>
         {passwordVisible && (
-          <div>
-            <p>ram</p>
+          <div style={{ marginTop: "30px", marginBottom: "30px" }}>
+            <p style={{ marginBottom: "20px" }}>Password</p>
+            <input type="text" style={inputStyle} />
+            <p style={{ marginBottom: "20px" }}>Change Password</p>
+            <input type="text" style={inputStyle} />
+            <input type="text" style={inputStyle} />
           </div>
         )}
       </div>
@@ -168,15 +181,15 @@ function Security1() {
           </span>
         </button>
         {twoFactorVisible && (
-          <div>
-            <h1>2 Factor Authentication</h1>
+          <div style={{ marginTop: "30px", marginBottom: "30px" }}>
+            <h1 style={{ marginBottom: "15px" }}>2 Factor Authentication</h1>
             <RadioGroup
               label=""
               options={emailOptions}
               selectedValue={Authentication}
               onChange={handleAuthenticationChange}
             />
-            <p>Add 2FA option1</p>
+            <p style={{ marginBottom: "20px" }}>Add 2FA option1</p>
             <p>Add 2FA option2</p>
           </div>
         )}
@@ -198,9 +211,9 @@ function Security1() {
           </span>
         </button>
         {savedLoginVisible && (
-          <div>
-            <p>Saved login information on this device</p>
-            <p>No need to enter credentials again to verify account</p>
+          <div style={{ marginTop: "30px", marginBottom: "40px" }}>
+            <p style={{ marginBottom: "20px" }}>Saved login information on this device</p>
+            <p style={{ width: "500px" }}>No need to enter credentials again to verify account</p>
           </div>
         )}
       </div>
@@ -221,11 +234,14 @@ function Security1() {
           </span>
         </button>
         {loginActivityVisible && (
-          <div>
+          <div style={{ marginTop: "30px", marginBottom: "40px" }}>
+            <p style={{ marginBottom: "10px" }}>Where You’re logged in</p>
+            <div>
+              <img src="images/location icon.png" alt="Icon" width="20" height="20" style={{ marginRight: '12px' }} />
+              <p style={{ marginBottom: "5px" }}>Vellore, Tamilnadu<br />Active now. Android 10</p>
+            </div>
             <img src="images/location icon.png" alt="Icon" width="20" height="20" style={{ marginRight: '10px' }} />
-            <p>Vellore, Tamilnadu<br />Active now. Android 10</p>
-            <img src="images/location icon.png" alt="Icon" width="20" height="20" style={{ marginRight: '10px' }} />
-            <p>Vellore, Tamilnadu<br />Active now. Android 10</p>
+            <p style={{ marginBottom: "5px" }}>Vellore, Tamilnadu<br />Active now. Android 10</p>
             <img src="images/location icon.png" alt="Icon" width="20" height="20" style={{ marginRight: '10px' }} />
             <p>Vellore, Tamilnadu<br />Active now. Android 10</p>
           </div>
@@ -248,23 +264,23 @@ function Security1() {
           </span>
         </button>
         {emailsVisible && (
-          <div>
-            <p>Security and login emails from flixdin will appear here.</p>
-            <p>
+          <div style={{ marginTop: "20px", marginBottom: "40px" }}>
+            <p style={{ width: "600px", marginBottom: "15px" }}>Security and login emails from flixdin will appear here.</p>
+            <p style={{ marginBottom: "20px" }}>
               <span>
-                loggen in on android 8
+                logged in on android 8
               </span>
               <span style={timeAgoTextStyle}>1d ago</span>
             </p>
-            <p>
+            <p style={{ marginBottom: "20px" }}>
               <span>
-                loggen in on windows
+                logged in on windows
               </span>
               <span style={timeAgoTextStyle}>8d ago</span>
             </p>
-            <p>
+            <p style={{ marginBottom: "20px" }}>
               <span>
-                loggen in on android 10
+                logged in on android 10
               </span>
               <span style={timeAgoTextStyle}>10d ago</span>
             </p>

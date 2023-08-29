@@ -2,12 +2,10 @@ import React from "react";
 import Card from "../home/sections/dist/DynamicCards";
 import SideBar from "../home/sidebar/Sidebar";
 import More1 from "./more1";
-import SwitchAccountButton from "./switch";
-import DeleteAccountButton from "./delete";
 
 function More() {
   return (
-    <div className="App flex flex-row shrink-1 h-screen w-screen" style={{ position: "relative" }}>
+    <div className="App flex flex-row shrink-1 w-screen">
       <div className="bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 my-2 w-1/5 h-fit">
         <SideBar />
       </div>
@@ -15,11 +13,12 @@ function More() {
         <div
           style={{
             width: "100%", // Cover the whole width
-            height: "100%", // Cover the whole height
+            height: "88vh", // Cover the whole height
             backgroundColor: "rgba(200, 180, 78, 0.28)",
             borderRadius: "10px",
             position: "absolute",
             top: "75px",
+
           }}
         >
           <div
@@ -48,8 +47,6 @@ function More() {
           }}
         >
           <More1 />
-          <SwitchAccountButton />
-          <DeleteAccountButton />
         </div>
 
         <h1

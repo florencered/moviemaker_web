@@ -94,58 +94,50 @@ const Interactions = () => {
   ];
 
   return (
-    <div style={{ width: "370px", marginLeft: "75px", textAlign: "left" }}>
-      <h1 style={{ fontSize: "24px" }}><strong>How others can interact with you</strong></h1>
-      <p style={{ marginTop: "10px" }}>Interaction</p>
-      <h2 style={{ marginTop: "10px" }}><strong>Messages</strong></h2>
+    <div className="w-[370px] ml-[75px] text-left">
+      <h1 className="text-xl">
+        <strong>How others can interact with you</strong>
+      </h1>
+      <p className="mt-3">Interaction</p>
+      <h2 className="mt-3">
+        <strong>Messages</strong>
+      </h2>
       <p>Manage message settings</p>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "126px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
-      <h2 style={{ marginTop: "15px" }}><strong>Activity Status</strong></h2>
-      <div
-        style={{
-          marginBottom: "10px",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
+      <div className="absolute w-[800px] top-[126px] left-[75px] border border-solid border-yellow-600 transform rotate-180 "></div>
+      <h2 className="mt-4">
+        <strong>Activity Status</strong>
+      </h2>
+      <div className="mb-3 flex items-center">
         <input
           type="checkbox"
           checked={showActivityStatus}
           onChange={toggleActivityStatus}
-          style={{ marginRight: "10px" , marginTop:"3px"}}
+          className="mr-3 mt-[3px]"
         />
         <p>Show activity status</p>
       </div>
-      <p style={{width:"600px"}}>Allow accounts that you follow and anyone you message to see when you<br/> were last active or are currently active on Instagram apps. When this is <br />turned off, you won't be able to see the activity status of other accounts.</p>
-      <h2 style={{ marginTop: "15px" }}><strong>Learn more</strong></h2>
-      <p  style={{width:"600px"}}>You can continue to use our services if Active Status is off</p>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "350px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
-      <h2 style={{ marginTop: "35px" }}><strong>Story</strong></h2>
-      <div style={{ marginBottom: "10px", marginTop: "5px" }}>
+      <p className="w-[600px]">
+        Allow accounts that you follow and anyone you message to see when you
+        <br /> were last active or are currently active on Instagram apps. When
+        this is <br />
+        turned off, you won't be able to see the activity status
+        of other accounts.
+      </p>
+      <h2 className="mt-4">
+        <strong>Learn more</strong>
+      </h2>
+      <p className="w-[600px]">
+        You can continue to use our services if Active Status is off
+      </p>
+      <div className="absolute w-[800px] top-[126px] left-[75px] border-2   border-solid border-[#978839] transform rotate-180 "></div>
+      <h2 className="mt-[35px]">
+        <strong>Story</strong>
+      </h2>
+      <div className="mb-3 mt-[5px]">
         <div
-          style={{ marginLeft: "1px", cursor: "pointer" }}
+          className="ml-[1px] cursor-pointer"
           onClick={() =>
-            handleStorySettingChange(
-              storySetting === null ? "Everyone" : null
-            )
+            handleStorySettingChange(storySetting === null ? "Everyone" : null)
           }
         >
           <p>Edit Story Settings</p>
@@ -159,21 +151,13 @@ const Interactions = () => {
           />
         )}
       </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "426px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
 
-      <h2 style={{ marginTop: "25px" }}><strong>Comments</strong></h2>
-      <div style={{ marginBottom: "10px",marginTop: "5px"  }}>
+      <h2 className="mt-[25px]">
+        <strong>Comments</strong>
+      </h2>
+      <div className="mb-[10px] mt-[5px]">
         <div
-          style={{ marginLeft: "1px", cursor: "pointer" }}
+          className="ml-[1px] cursor-pointer"
           onClick={() =>
             handleCommentSettingChange(
               commentSetting === null ? "Everyone" : null
@@ -191,21 +175,13 @@ const Interactions = () => {
           />
         )}
       </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "800px",
-          top: "500px",
-          left: "75px",
-          border: "1px solid rgba(151, 136, 57, 1)",
-          transform: "rotate(-180deg)",
-        }}
-      ></div>
-
-      <h2 style={{ marginTop: "25px" }}><strong>Mentions</strong></h2>
-      <div style={{ marginBottom: "10px",marginTop: "5px"  }}>
+      <h2 className="mt-[25px]">
+        <strong>Mentions</strong>
+      </h2>
+      <div className="mb-3 mt-[5px]">
         <div
-          style={{ marginLeft: "1px", cursor: "pointer" }}
+          className="ml-[1px] cursor-pointer"
+          x
           onClick={() =>
             handleMentionSettingChange(
               mentionsSetting === null ? "Everyone" : null

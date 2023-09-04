@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Help() {
   const [helpCenterVisible, setHelpCenterVisible] = useState(false);
   const [privacyVisible, setPrivacyVisible] = useState(false);
-  const [additionalSupportVisible, setAdditionalSupportVisible] = useState(false);
+  const [additionalSupportVisible, setAdditionalSupportVisible] =
+    useState(false);
 
   const toggleHelpCenter = () => {
     setHelpCenterVisible(!helpCenterVisible);
@@ -24,82 +25,69 @@ function Help() {
   };
 
   const arrowStyle = {
-    position: 'absolute',
-    right: '10px', 
+    position: "absolute",
+    right: "10px",
   };
 
   const buttonStyle = {
-    position: 'relative',
-    paddingRight: '100px',
+    position: "relative",
+    paddingRight: "100px",
   };
 
   return (
-    <div style={{ marginLeft: "90px", width: "400px", marginTop: "50px", textAlign: "left" }}>
-      <div style={{ marginBottom: "20px" }}>
-        <button
-          style={buttonStyle}
-          onClick={toggleHelpCenter}
-        >
+    <div className="ml-20 w-[400px] mt-10 text-left text-black">
+      <div className="mb-5">
+        <button className="relative pr-24" onClick={toggleHelpCenter}>
           <strong>Help Center</strong>
-          <span style={arrowStyle}>
-          {
-              helpCenterVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+          <span className="absolute right-4">
+            {helpCenterVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {helpCenterVisible && (
-          <div>
-            <p>Click to see FAQs</p>
-            <p>Contact us for more help</p>
+          <div className="mt-8 mb-8">
+            <p className="mb-5 underline">Click to see FAQs</p>
+            <p style={{ textDecoration: "underline" }}>
+              Contact Us for more help
+            </p>
           </div>
         )}
       </div>
-      <div style={{ marginBottom: "20px" }}>
-        <button
-          style={buttonStyle}
-          onClick={togglePrivacy}
-        >
+      <div className="mb-5  ">
+        <button style={buttonStyle} onClick={togglePrivacy}>
           <strong>Privacy and Security Help</strong>
           <span style={arrowStyle}>
-          {
-              privacyVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+            {privacyVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {privacyVisible && (
-          <div>
-            <p>Update your privacy settings</p>
-            <p>Contact us for help</p>
+          <div className="mt-8 mb-8">
+            <p className="mb-5 underline">Update your privacy settings</p>
+            <p style={{ textDecoration: "underline" }}>Contact us for help</p>
           </div>
         )}
       </div>
       <div>
-        <button
-          style={buttonStyle}
-          onClick={toggleAdditionalSupport}
-        >
+        <button style={buttonStyle} onClick={toggleAdditionalSupport}>
           <strong>Support Requests</strong>
           <span style={arrowStyle}>
-          {
-              additionalSupportVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+            {additionalSupportVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {additionalSupportVisible && (
-          <div>
-            <p>Contact us for additional support</p>
+          <div className="mt-8 mb-8">
+            <p className="mb-5 underline">Contact for additional support</p>
           </div>
         )}
       </div>

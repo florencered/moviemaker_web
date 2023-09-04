@@ -3,50 +3,25 @@ import React, { useState } from "react";
 const RadioGroup = ({ label, options, selectedValue, onChange }) => (
   <div>
     <label>{label}</label>
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className="flex flex-col">
       {options.map((option) => (
-        <label
-          key={option.value}
-          style={{
-            marginBottom: "14px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
+        <label key={option.value} className="mb-[14px] flex items-center">
           <input
-            style={{
-              display: "none",
-            }}
+            className="hidden"
             type="radio"
             value={option.value}
             onChange={() => onChange(option.value)}
             checked={selectedValue === option.value}
           />
-          <div
-            style={{
-              width: "20px",
-              height: "20px",
-              border: "1px solid rgba(151, 136, 57, 1)",
-              borderRadius: "50%",
-              display: "inline-block",
-              marginRight: "8px",
-              position: "relative",
-              marginLeft:"29px"
-            }}
-          >
+
+          <div className="w-[20px] h-[20px] border-2 border-[#978839] rounded-full inline-block mr-[8px] relative ml-[20px]">
             <div
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[10px] h-[10px] rounded-full"
               style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                width: "10px",
-                height: "10px",
                 backgroundColor:
                   selectedValue === option.value ? "black" : "transparent",
-                borderRadius: "50%",
               }}
-            />
+            ></div>
           </div>
           <span>{option.label}</span>
         </label>
@@ -89,8 +64,8 @@ const EmailSettings = () => {
 
   return (
     <div>
-      <div style={{ marginBottom: "10px" , marginTop:"10px"}}>
-        <div style={{ marginLeft: "-20px" }}>
+      <div className="my-[10px]">
+        <div className="ml-[-20px]">
           <h2>Feedback Emails</h2>
         </div>
         <RadioGroup
@@ -101,8 +76,8 @@ const EmailSettings = () => {
         />
       </div>
 
-      <div style={{ marginBottom: "10px" }}>
-        <div style={{ marginLeft: "-20px" }}>
+      <div className="mb-[10px]">
+        <div className="ml-[-20px]">
           <h2>Reminder Emails</h2>
         </div>
         <RadioGroup
@@ -113,8 +88,8 @@ const EmailSettings = () => {
         />
       </div>
 
-      <div style={{ marginBottom: "10px" }}>
-        <div style={{ marginLeft: "-36px" }}>
+      <div className="mb-[10px]">
+        <div className="ml-[-20px]">
           <h2>Product Emails</h2>
         </div>
         <RadioGroup
@@ -125,8 +100,8 @@ const EmailSettings = () => {
         />
       </div>
 
-      <div style={{ marginBottom: "10px" }}>
-        <div style={{ marginLeft: "-54px" }}>
+      <div className="mb-[10px]">
+        <div className="ml-[-20px]">
           <h2>News Emails</h2>
         </div>
         <RadioGroup
@@ -136,9 +111,8 @@ const EmailSettings = () => {
           onChange={handleNewsEmailSettingChange}
         />
       </div>
-
-      <div style={{ marginBottom: "10px" }}>
-        <div style={{ marginLeft: "-34px" }}>
+      <div className="mb-[10px]">
+        <div className="ml-[-34px]">
           <h2>Support Emails</h2>
         </div>
         <RadioGroup

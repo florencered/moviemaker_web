@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import SwitchComponent from "./toggle";
 
 function Connections() {
-  const [RestrictedAccountsVisible, setRestrictedAccountsVisible] = useState(false);
+  const [RestrictedAccountsVisible, setRestrictedAccountsVisible] =
+    useState(false);
   const [BlockedAccountsVisible, setBlockedAccountsVisible] = useState(false);
   const [MutedAccountsVisible, setMutedAccountsVisible] = useState(false);
-  const [AccountsyoufollowVisible, setAccountsyoufollowVisible] = useState(false);
+  const [AccountsyoufollowVisible, setAccountsyoufollowVisible] =
+    useState(false);
 
   const toggleRestrictedAccounts = () => {
     setRestrictedAccountsVisible(!RestrictedAccountsVisible);
@@ -34,143 +37,213 @@ function Connections() {
     setMutedAccountsVisible(false);
   };
 
-  const arrowStyle = {
-    position: 'absolute',
-    right: '10px', 
-  };
-
-  const buttonStyle = {
-    position: 'relative',
-    paddingRight: '100px',
-  };
-
   return (
-    <div style={{ marginLeft: "40px", width: "400px", marginTop: "30px", textAlign: "left" }}>
-      <div style={{ marginBottom: "20px" }}>
-        <button
-          style={buttonStyle}
-          onClick={toggleRestrictedAccounts}
-        >
+    <div className="ml-32  w-400 mt-30 text-left">
+      <div className="mb-10">
+        <button className="relative pr-16" onClick={toggleRestrictedAccounts}>
           <strong>Restricted Accounts</strong>
-          <span style={arrowStyle}>
-          {
-              RestrictedAccountsVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+          <span className="absolute right-2">
+            {RestrictedAccountsVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {RestrictedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div className="text-center mt-30 mb-10">
+            <p className="w-[650px] mt-10">
+              Restrict people from knowing you online/offline status
+              <br />
+              Protect yourself from unwanted interaction <br />
+              without block or unfollow
+            </p>
+            <div className="ml-[-200px] mt-25 mb-10">
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+            </div>
           </div>
         )}
       </div>
 
-      <div style={{ marginBottom: "20px" }}>
-        <button
-          style={buttonStyle}
-          onClick={toggleBlockedAccounts}
-        >
+      <div className="mb-10">
+        <button className="relative pr-16" onClick={toggleBlockedAccounts}>
           <strong>Blocked Accounts</strong>
-          <span style={arrowStyle}>
-          {
-              BlockedAccountsVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+          <span className="absolute right-2">
+            {BlockedAccountsVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {BlockedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div className="text-center mt-30 mb-10">
+            <p className="w-[650px] mt-10">
+              Restrict people from knowing you online/offline status
+              <br />
+              Protect yourself from unwanted interaction <br />
+              without block or unfollow
+            </p>
+            <div className="ml-[-200px] mt-25 mb-10">
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+            </div>
           </div>
         )}
       </div>
 
-      <div style={{ marginBottom: "20px" }}>
-        <button
-          style={buttonStyle}
-          onClick={toggleMutedAccounts}
-        >
+      <div className="mb-10">
+        <button className="relative pr-16" onClick={toggleMutedAccounts}>
           <strong>Muted Accounts</strong>
-          <span style={arrowStyle}>
-          {
-              MutedAccountsVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+          <span className="absolute right-2">
+            {MutedAccountsVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {MutedAccountsVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div className="text-center mt-30 mb-10">
+            <p className="w-96 mt-10">
+              Restrict people from knowing you online/offline status
+              <br />
+              Protect yourself from unwanted interaction <br />
+              without block or unfollow
+            </p>
+            <div className="ml-[-200px] mt-25 mb-30">
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+            </div>
           </div>
         )}
       </div>
 
       <div>
-        <button
-          style={buttonStyle}
-          onClick={toggleAccountsyoufollow}
-        >
+        <button className="relative pr-16" onClick={toggleAccountsyoufollow}>
           <strong>Accounts you follow</strong>
-          <span style={arrowStyle}>
-          {
-              AccountsyoufollowVisible ? (
-                <img src="images/v2.png" />
-              ) : (
-                <img src="images/v1.png" />
-              )
-            }
+          <span className="absolute right-2">
+            {AccountsyoufollowVisible ? (
+              <img src="images/v2.png" />
+            ) : (
+              <img src="images/v1.png" />
+            )}
           </span>
         </button>
         {AccountsyoufollowVisible && (
-          <div>
-            <p>Restrict people from knowing you online/offline status<br />
-             Protect yourself from unwanted interaction <br />
-             without block or unfollow</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
-             <p>Arkaz</p>
+          <div className="text-center mt-30 mb-10">
+            <p className="w-96 mt-10">
+              Restrict people from knowing you online/offline status
+              <br />
+              Protect yourself from unwanted interaction <br />
+              without block or unfollow
+            </p>
+            <div className="ml-[-200px] mt-25 mb-30">
+              <p>Arkaz</p>
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+              <p>Arkaz</p>
+
+              <div className="ml-[700px] mt-[-25px] mb-3">
+                <SwitchComponent />
+              </div>
+            </div>
           </div>
         )}
       </div>
-
-
     </div>
   );
 }

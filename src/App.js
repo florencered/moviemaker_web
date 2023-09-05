@@ -7,6 +7,9 @@ import Home from "./components/home/Home";
 import Explore from "./components/explore/Explore";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Notifications from "./components/notifications/Notifications";
+
+import More from "./components/more/More";
+
 import Intro from "./components/intro/Intro";
 import Login from "./components/intro/Login";
 import Register from "./components/intro/Register";
@@ -16,6 +19,7 @@ import TAndC from "./components/intro/TAndC";
 import MobileNo from "./components/intro/MobileNo";
 import AddSkills from "./components/intro/AddSkills";
 import Welcome from "./components/intro/Welcome";
+
 
 function App() {
   return (
@@ -37,6 +41,7 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />{" "}
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
+          <Route path="/more" element={<More />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

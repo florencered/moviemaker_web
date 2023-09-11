@@ -19,6 +19,7 @@ import TAndC from "./components/intro/TAndC";
 import MobileNo from "./components/intro/MobileNo";
 import AddSkills from "./components/intro/AddSkills";
 import Welcome from "./components/intro/Welcome";
+import Flicks from "./components/flicks/flicks";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
           <Route path="/more" element={<More />} />{" "}
+          <Route path="/flicks" element={<Flicks />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

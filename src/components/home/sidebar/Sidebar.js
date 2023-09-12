@@ -71,7 +71,7 @@ function Sidebar(props) {
           Flicks{" "}
         </div>{" "}
       </a>{" "}
-      <a href="/">
+      <a href="/message">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaMessage size="1.5rem" class="ml-5">
             {" "}

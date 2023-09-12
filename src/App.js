@@ -10,6 +10,8 @@ import Notifications from "./components/notifications/Notifications";
 
 import More from "./components/more/More";
 
+import Messages from "./components/messages/Messages";
+
 import Intro from "./components/intro/Intro";
 import Login from "./components/intro/Login";
 import Register from "./components/intro/Register";
@@ -41,6 +43,7 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />{" "}
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
+          <Route path="/message" element={<Messages />} />{" "}
           <Route path="/more" element={<More />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}

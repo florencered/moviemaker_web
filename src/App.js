@@ -22,6 +22,7 @@ import MobileNo from "./components/intro/MobileNo";
 import AddSkills from "./components/intro/AddSkills";
 import Welcome from "./components/intro/Welcome";
 import Settings from "./components/more/Settings";
+import Flicks from "./components/flicks/flicks";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/connectionCalls" element={<Call />} />{" "}
           <Route path="/message" element={<Messages />} />{" "}
           <Route path="/more/Settings" element={<Settings />} />{" "}
+          <Route path="/flicks" element={<Flicks />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

@@ -21,6 +21,7 @@ import TAndC from "./components/intro/TAndC";
 import MobileNo from "./components/intro/MobileNo";
 import AddSkills from "./components/intro/AddSkills";
 import Welcome from "./components/intro/Welcome";
+import Settings from "./components/more/More";
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
           <Route path="/message" element={<Messages />} />{" "}
-          <Route path="/more/Settings" element={<More />} />{" "}
+          <Route path="/more/Settings" element={<Settings />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

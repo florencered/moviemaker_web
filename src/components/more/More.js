@@ -3,7 +3,7 @@ import Card from "../home/sections/dist/DynamicCards";
 import SideBar from "../home/sidebar/Sidebar";
 import More1 from "./more1";
 
-function More() {
+function Settings() {
   return (
     <div
       className="App flex flex-row shrink-1 h-screen w-screen"
@@ -13,7 +13,7 @@ function More() {
         <SideBar />
       </div>
       <div className="box1 mt-4 ml-4 text-left h-screen w-screen">
-        <div className="w-full h-full bg-[#e0d59a] bg-opacity-28 rounded-10 absolute top-[75px]">
+        <div className="w-full h-[620px] bg-[#e0d59a] bg-opacity-28 rounded-10 absolute top-[75px]">
           <div className="absolute w-[600px] top-[301px] left-[-75px] transform -rotate-90 border border-[#978839]"></div>
         </div>
         <div className="sidebar ml-6 absolute h-auto top-[107px] font-inter text-[18px] font-semibold leading-24 text-center">
@@ -27,4 +27,4 @@ function More() {
   );
 }
 
-export default More;
+export default Settings;

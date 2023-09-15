@@ -44,7 +44,7 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />{" "}
           <Route path="/connectionCalls" element={<Call />} />{" "}
           <Route path="/message" element={<Messages />} />{" "}
-          <Route path="/more" element={<More />} />{" "}
+          <Route path="/more/Settings" element={<More />} />{" "}
         </Routes>{" "}
       </BrowserRouter>{" "}
     </div>

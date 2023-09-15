@@ -19,7 +19,6 @@ function More() {
         <div className="sidebar ml-6 absolute h-auto top-[107px] font-inter text-[18px] font-semibold leading-24 text-center">
           <More1 />
         </div>
-
         <h1 className="leading-44 text-[36px] font-semibold tracking-normal text-black">
           Account Settings
         </h1>

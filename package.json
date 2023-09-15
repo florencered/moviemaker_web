@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "flixdin_web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -46,5 +46,9 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "Tech stack(and dependencies) to be used: <br/> \r React <br/> \r Tailwind css <br/> \r Jsx <br/>  \r ## Rules to be followed\r <b>DO NOT COMMIT TO THE MAIN BRANCH<b/> <br/> \r Submit a PR under your branch name with proposed changes<br/> \r Stick to colour codes and dimensions mentioned in the figma design<br/>  \r ## NO EXTERNAL CSS FILES TO BE USED LIKE APP.CSS",
+  "main": "tailwind.config.js",
+  "author": "",
+  "license": "ISC"
 }

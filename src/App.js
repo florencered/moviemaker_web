@@ -8,7 +8,7 @@ import Explore from "./components/explore/Explore";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Notifications from "./components/notifications/Notifications";
 
-import More from "./components/more/More";
+import More from "./components/more/Settings";
 
 import Messages from "./components/messages/Messages";
 
@@ -21,7 +21,7 @@ import TAndC from "./components/intro/TAndC";
 import MobileNo from "./components/intro/MobileNo";
 import AddSkills from "./components/intro/AddSkills";
 import Welcome from "./components/intro/Welcome";
-import Settings from "./components/more/More";
+import Settings from "./components/more/Settings";
 
 
 function App() {

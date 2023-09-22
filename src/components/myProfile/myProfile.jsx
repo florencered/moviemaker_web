@@ -86,7 +86,7 @@ const ProfileHome = () => {
               </svg>
             </div>
           </div>
-          <div className="content-center">
+          <div className="content-center ju">
             <Reels />
           </div>
         </div>

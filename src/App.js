@@ -26,15 +26,15 @@ function App() {
     <div className="App bg-[#FFFADD]">
       <BrowserRouter>
         <Routes>
-          <Route path="/intro" element={<Intro/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/register/addbirth" element={<Birthday/>}/>
-          <Route path="/register/addmobile" element={<MobileNo/>}/>
-          <Route path="/register/adddomain" element={<SelectDomain/>}/>
-          <Route path="/register/addskills" element={<AddSkills/>}/>
-          <Route path="/register/termsandconditions" element={<TAndC/>}/>
-          <Route path="/welcome" element={<Welcome/>}/>
+          <Route path="/intro" element={<Intro />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/register/addbirth" element={<Birthday />} />
+          <Route path="/register/addmobile" element={<MobileNo />} />
+          <Route path="/register/adddomain" element={<SelectDomain />} />
+          <Route path="/register/addskills" element={<AddSkills />} />
+          <Route path="/register/termsandconditions" element={<TAndC />} />
+          <Route path="/welcome" element={<Welcome />} />
           <Route path="/home" element={<Home />} />{" "}
           <Route path="/domainpage" element={<Domainpage />} />{" "}
           <Route path="/explore" element={<Explore />} />{" "}

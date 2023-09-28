@@ -1,13 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
+import {signInWithEmailAndPassword, getAuth} from 'firebase/auth'
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(""); 
+  const navigate = useNavigate()
+  const auth = getAuth();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        navigate('/home');
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorCode)
+      })
+  };
 
-    
-
-  const handleLogin = () => {};
   return (
     <div className="w-full h-screen flex justify-center">
       <div className="w-10/12 h-full flex justify-between items-center">

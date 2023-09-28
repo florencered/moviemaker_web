@@ -6,7 +6,6 @@ import {signInWithEmailAndPassword, getAuth} from 'firebase/auth'
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(""); 
   const navigate = useNavigate()
   const auth = getAuth();
   const handleLogin = (e) => {

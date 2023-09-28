@@ -16,11 +16,11 @@ const Register = () => {
   return (
     <div className="w-full h-screen flex justify-center">
     <div className="w-10/12 h-full flex justify-between items-center">
-      <img src="/images/images/reel.png" alt=".." className="h-screen w-24" />
-      <div></div>
-      <img src="/images/flixdin.png" alt=".." className="" />
+      <img src="/images/images/reel.png" alt=".." className="h-screen lg:block hidden w-24" />
+
+      <img src="/images/flixdin.png" alt=".." className="md:block hidden" />
       <div
-        className="w-96 shrink-0 rounded-3xl border-2 border-[#978839] bg-[#fff] flex flex-col items-center"
+        className="sm:w-96 w-80 rounded-3xl border-2 border-[#978839] bg-[#fff] flex flex-col items-center"
         style={{ height: "680px" }}
       >
         <div className="w-64">

@@ -1,9 +1,7 @@
 import Nav from "../home/sidebar/sidebar.js";
-import Ortifolio from "./Protifolio.jsx";
+import Comment from "./Comment.js";
 
-
-
-const PortifolioPage = () => {
+const CommentPage = () => {
   return (
     <div className="flex">
       <div class="rounded-lg bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
@@ -98,7 +96,7 @@ const PortifolioPage = () => {
             </div>
           </div>
           <div className="content-center">
-            <Ortifolio />
+            <Comment />
           </div>
         </div>
       </div>
@@ -106,4 +104,4 @@ const PortifolioPage = () => {
   );
 };
 
-export default PortifolioPage
+export default CommentPage

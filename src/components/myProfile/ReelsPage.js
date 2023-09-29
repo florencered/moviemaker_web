@@ -1,5 +1,5 @@
 import Nav from "../home/sidebar/sidebar.js";
-import Reels from "./reels.jsx";
+import Reels from "./reels.js";
 
 
 const ReelsPage = () => {

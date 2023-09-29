@@ -4,11 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Domainpage from "./components/home/sections/domain/Domainpage";
 import "./App.css";
 import Home from "./components/home/home";
-import Explore from "./components/explore/explore.jsx";
-import Notifications from "./components/notifications/notifications.jsx"
-import ProfileHome from "./components/myProfile/myProfile.jsx";
-import CommentPage from "./components/myProfile/Commentpage.jsx";
-import PhotoPage from "./components/myProfile/PhotoPage.jsx";
+import Explore from "./components/explore/explore.js";
+import Notifications from "./components/notifications/notifications.js"
+import ProfileHome from "./components/myProfile/myProfile.js";
+import CommentPage from "./components/myProfile/Commentpage.js";
+import PhotoPage from "./components/myProfile/PhotoPage.js";
 import PortifolioPage from "./components/myProfile/PortifolioPage";
 
 function App() {

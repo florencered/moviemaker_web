@@ -1,7 +1,8 @@
 import Nav from "../home/sidebar/sidebar.js";
-import Comment from "./Comment.jsx";
+import Reels from "./reels.js";
 
-const CommentPage = () => {
+
+const PhotoPage = () => {
   return (
     <div className="flex">
       <div class="rounded-lg bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
@@ -96,7 +97,7 @@ const CommentPage = () => {
             </div>
           </div>
           <div className="content-center">
-            <Comment />
+            <Reels />
           </div>
         </div>
       </div>
@@ -104,4 +105,4 @@ const CommentPage = () => {
   );
 };
 
-export default CommentPage
+export default PhotoPage

@@ -1,7 +1,9 @@
 import Nav from "../home/sidebar/sidebar.js";
-import Reels from "./reels.jsx";
+import Ortifolio from "./Protifolio.js";
 
-const ProfileHome = () => {
+
+
+const PortifolioPage = () => {
   return (
     <div className="flex">
       <div class="rounded-lg bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
@@ -13,17 +15,25 @@ const ProfileHome = () => {
           <div className="flex justify-start py-3 h-fit">
             <div className="start-0">
               <img
-                src="images/profilephoto.jpeg"
-                className="rounded-full w-[8rem] mr-4 p-1 border-2 border-[#978839]"
-                alt="profile phot"
+                src="images/profile_pic.png"
+                className="rounded-full mr-4 p-1 border-2 border-[#978839]"
+                alt="profilephoto"
               />
             </div>
             <div className="items-center">
               <div className="rounded-lg bg-[#F7EAA9] flex py-5 font-bold">
-                <div className="px-7 py-3">posts<p className="font-normal">92</p></div>
-                <div className="px-7 py-3">followers<p className="font-normal">153</p></div>
-                <div className="px-7 py-3">following<p className="font-normal">500</p></div>
-                <div className="px-7 py-3">likes<p className="font-normal">23</p></div>
+                <div className="px-7 py-3">
+                  posts<p className="font-normal">92</p>
+                </div>
+                <div className="px-7 py-3">
+                  followers<p className="font-normal">153</p>
+                </div>
+                <div className="px-7 py-3">
+                  following<p className="font-normal">500</p>
+                </div>
+                <div className="px-7 py-3">
+                  likes<p className="font-normal">23</p>
+                </div>
               </div>
               <div className="flex py-4 justify-evenly">
                 <div className="px-3 mr-2 bg-[#F7EAA9] rounded-lg">
@@ -55,7 +65,9 @@ const ProfileHome = () => {
               />
             </div>
             <div className=" hover:border-b-4 border-b-[#FFFADD] border-b-4 hover:border-b-[#978839] ">
-              <a href="/Profile/CommentPage"><img src="/images/images/1.png" className="w-6 mx-20" alt="" /></a>
+              <a href="./">
+                <img src="/images/images/1.png" className="w-6 mx-20" alt="" />
+              </a>
             </div>
             <div className=" hover:border-b-4 border-b-[#FFFADD] border-b-4 hover:border-b-[#978839] ">
               <img src="/images/images/6.png" className="w-7 mx-20" alt="" />
@@ -72,8 +84,7 @@ const ProfileHome = () => {
             <div className="hover:border-b-4 border-b-[#FFFADD] border-b-4 hover:border-b-[#978839] ">
               <svg
                 width="34"
-                height="34" 
-
+                height="34"
                 viewBox="0 0 34 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,8 +97,8 @@ const ProfileHome = () => {
               </svg>
             </div>
           </div>
-          <div className="content-center ju">
-            <Reels />
+          <div className="content-center">
+            <Ortifolio />
           </div>
         </div>
       </div>
@@ -95,4 +106,4 @@ const ProfileHome = () => {
   );
 };
 
-export default ProfileHome;
+export default PortifolioPage

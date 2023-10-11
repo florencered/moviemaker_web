@@ -11,11 +11,11 @@ const Flicks = () => {
   const [liked, setLiked] = useState(false);
   return (
     <div className="flex min-h-screen bg-[#fffadd] w-full  h-screen">
-      <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2">
+      <div class="basis-1/4 bg-[#F7EAA9] rounded-r-3xl my-2 md:block hidden">
         <Sidebar />
       </div>
-      <div className="m-3 mt-8 w-full flex flex-col ml-9 items-center justify-center">
-        <div className="w-5/12 h-full flex">
+      <div className="m-3 mt-8 w-full flex flex-col sm:ml-9 items-center justify-center">
+        <div className="md:w-8/12 lg:w-5/12 sm:w-6/12 w-11/12 lg:h-full md:h-5/6 h-5/6 flex">
           <div className="relative w-10/12 flex flex-col justify-between rounded-3xl shadow-2xl border">
             <div className="absolute h-full w-full z-0">
               <img src="/images/flickssample.png" className="w-full h-full overflow-hidden" />
@@ -30,13 +30,13 @@ const Flicks = () => {
               </div>
             </div>
             <div className="z-20 pl-5 mb-6 flex flex-col gap-2">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center sm:gap-4 gap-2">
                 <img
                   src="/images/profile_pic.png"
-                  className="rounded-full w-10 h-10"
+                  className="rounded-full w-7 h-7 sm:w-10 sm:h-10"
                 />
-                <p className="text-white font-semibold text-lg">rohan_p</p>
-                <button className="border-2 border-[#111] font-semibold text-sm p-1 px-3 rounded-xl">
+                <p className="text-white font-semibold sm:text-lg">rohan_p</p>
+                <button className="border-2 border-[#111] font-semibold text-[10px] sm:text-sm p-1 px-3 rounded-xl">
                   Follow
                 </button>
               </div>

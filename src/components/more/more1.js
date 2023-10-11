@@ -29,7 +29,8 @@ const More1 = () => {
   ];
 
   return (
-    <div>
+    <div className="">
+      {" "}
       {itemList.map((item, index) => (
         <div
           key={index}
@@ -41,74 +42,71 @@ const More1 = () => {
               : item === "Delete Account"
               ? "text-red-500"
               : "text-black"
-          } rounded-lg hover:bg-white`}
+          } rounded-lg hover:bg-white `}
           onClick={() => handleItemClick(index)}
         >
-          {item}
+          {item}{" "}
           {activeItem === index && (
-            <div className="absolute left-52 w-full ">
+            <div className="absolute left-52 top-[-20px] bottom-[20px]">
+              {/* here is the erro for interaaction page */}{" "}
               {item === "Edit Profile" && (
-                <div className="relatice top-[-25px] ml-[-30px]">
-                  Edit Profile
-                  <Editfile />
+                <div className="relative top-[-25px] ml-[-30px] ">
+                  Edit Profile <Editfile />
                 </div>
-              )}
+              )}{" "}
               {item === "Connections" && (
                 <div class="relative top-[-70px]">
                   <Connections />
                 </div>
-              )}
+              )}{" "}
               {item === "Push Notifications" && (
-                <div className="relative top-[-113px] left-[2px] ">
-                  <h1 className="ml-[-8px]">Push Notifications</h1>
+                <div className="relative top-[-133px] left-[50px] ">
+                  <h1 className="ml-[-8px]"> Push Notifications </h1>{" "}
                   <PushSettings />
                 </div>
-              )}
+              )}{" "}
               {item === "Email Notifications" && (
-                <div className="relative top-[-158px] w-[220px]">
-                  Email Notifications
-                  <EmailSettings />
+                <div className="relative top-[-143px] w-[220px]">
+                  Email Notifications <EmailSettings />
                 </div>
-              )}
+              )}{" "}
               {item === "Security" && (
                 <div className="relative top-[-200px] left-[-40px]">
-                  <h1 className="font-bold">Security</h1>
-                  <Security1 />
+                  <h1 className="font-bold"> Security </h1> <Security1 />
                 </div>
-              )}
+              )}{" "}
               {item === "Interaction" && (
                 <div className="relative top-[-242px]  left-[-40px]">
                   <Interactions />
                 </div>
-              )}
+              )}{" "}
               {item === "Help" && (
                 <div className="relative top-[-287px] left-[-56px]">
-                  <h1 className="font-bold">Help</h1>
-                  <Help />
+                  <h1 className="font-bold"> Help </h1> <Help />
                 </div>
-              )}
+              )}{" "}
               {item === "Switch Account" && (
                 <div className="relative top-[-327px] left-[-4px] text-black">
-                  <h1 class="font-bold text-[22px] ">Switch Account</h1>
-                  <p className="mt-[30px] ml-[27px]">Switch to Account 1</p>
-                  <p className="mt-[20px] ml-[27px]">Switch to Account 2</p>
+                  <h1 class="font-bold text-[22px] "> Switch Account </h1>{" "}
+                  <p className="mt-[30px] ml-[27px]"> Switch to Account 1 </p>{" "}
+                  <p className="mt-[20px] ml-[27px]"> Switch to Account 2 </p>{" "}
                 </div>
-              )}
+              )}{" "}
               {item === "Delete Account" && (
                 <div className="relative top-[-367px] left-[-4px] text-black">
-                  <h1 className="font-bold text-[22px]">Delete Account</h1>
+                  <h1 className="font-bold text-[22px]"> Delete Account </h1>{" "}
                   <p className="mt-[30px] ml-[39px] w-[240px]">
-                    Permanantely Delete account
-                  </p>
+                    Permanantely Delete account{" "}
+                  </p>{" "}
                   <p className="mt-[20px] ml-[17px] w-[240px]">
-                    Delete for some period
-                  </p>
+                    Delete for some period{" "}
+                  </p>{" "}
                 </div>
-              )}
+              )}{" "}
             </div>
-          )}
+          )}{" "}
         </div>
-      ))}
+      ))}{" "}
     </div>
   );
 };

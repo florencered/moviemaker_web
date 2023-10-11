@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 const RadioGroup = ({ label, options, selectedValue, onChange }) => (
   <div>
-    <label>{label}</label>
+    <label> {label} </label>{" "}
     <div style={{ display: "flex", flexDirection: "column" }}>
+      {" "}
       {options.map((option) => (
         <label
           key={option.value}
@@ -21,12 +22,12 @@ const RadioGroup = ({ label, options, selectedValue, onChange }) => (
             value={option.value}
             onChange={() => onChange(option.value)}
             checked={selectedValue === option.value}
-          />
+          />{" "}
           <div
             style={{
               width: "20px",
               height: "20px",
-              border: "1px solid rgba(151, 136, 57, 1)",
+              border: "1px solid rgba(151, 136, 57, 3)",
               borderRadius: "50%",
               display: "inline-block",
               marginRight: "8px",
@@ -46,12 +47,12 @@ const RadioGroup = ({ label, options, selectedValue, onChange }) => (
                   selectedValue === option.value ? "black" : "transparent",
                 borderRadius: "50%",
               }}
-            />
-          </div>
-          <span>{option.label}</span>
+            />{" "}
+          </div>{" "}
+          <span> {option.label} </span>{" "}
         </label>
-      ))}
-    </div>
+      ))}{" "}
+    </div>{" "}
   </div>
 );
 
@@ -94,19 +95,21 @@ const Interactions = () => {
   ];
 
   return (
-    <div className="w-[370px] ml-[75px] text-left">
+    <div className=" ml-[75px] text-left box-content w-[1000px] bg-[#e0d59a]">
       <h1 className="text-xl">
-        <strong>How others can interact with you</strong>
-      </h1>
-      <p className="mt-3">Interaction</p>
+        <strong> How others can interact with you </strong>{" "}
+      </h1>{" "}
+      <p className="mt-3"> Interaction </p>{" "}
       <h2 className="mt-3">
-        <strong>Messages</strong>
-      </h2>
-      <p>Manage message settings</p>
-      <div className="absolute w-[800px] top-[126px] left-[75px] border border-solid border-yellow-600 transform rotate-180 "></div>
+        <strong> Messages </strong>{" "}
+      </h2>{" "}
+      <p> Manage message settings </p>{" "}
+      <div className="absolute w-[800px] top-[126px] left-[75px] border border-solid border-yellow-600 transform rotate-180 ">
+        {" "}
+      </div>{" "}
       <h2 className="mt-4">
-        <strong>Activity Status</strong>
-      </h2>
+        <strong> Activity Status </strong>{" "}
+      </h2>{" "}
       <div className="mb-3 flex items-center">
         <input
           type="checkbox"
@@ -114,25 +117,27 @@ const Interactions = () => {
           onChange={toggleActivityStatus}
           className="mr-3 mt-[3px]"
         />
-        <p>Show activity status</p>
-      </div>
+        <p> Show activity status </p>{" "}
+      </div>{" "}
       <p className="w-[600px]">
-        Allow accounts that you follow and anyone you message to see when you
-        <br /> were last active or are currently active on Instagram apps. When
+        Allow accounts that you follow and anyone you message to see when you{" "}
+        <br /> were last active or are currently active on Instagram apps.When
         this is <br />
-        turned off, you won't be able to see the activity status
-        of other accounts.
-      </p>
+        turned off, you won 't be able to see the activity status of  other 
+        accounts.{" "}
+      </p>{" "}
       <h2 className="mt-4">
-        <strong>Learn more</strong>
-      </h2>
+        <strong> Learn more </strong>{" "}
+      </h2>{" "}
       <p className="w-[600px]">
-        You can continue to use our services if Active Status is off
-      </p>
-      <div className="absolute w-[800px] top-[126px] left-[75px] border-2   border-solid border-[#978839] transform rotate-180 "></div>
+        You can continue to use our services if Active Status is off{" "}
+      </p>{" "}
+      <div className="absolute w-[800px] top-[126px] left-[75px] border-2   border-solid border-[#978839] transform rotate-180 ">
+        {" "}
+      </div>{" "}
       <h2 className="mt-[35px]">
-        <strong>Story</strong>
-      </h2>
+        <strong> Story </strong>{" "}
+      </h2>{" "}
       <div className="mb-3 mt-[5px]">
         <div
           className="ml-[1px] cursor-pointer"
@@ -140,21 +145,20 @@ const Interactions = () => {
             handleStorySettingChange(storySetting === null ? "Everyone" : null)
           }
         >
-          <p>Edit Story Settings</p>
-        </div>
+          <p> Edit Story Settings </p>{" "}
+        </div>{" "}
         {storySetting !== null && (
           <RadioGroup
-            label={<h2>Who can see your Comments</h2>}
+            label={<h2> Who can see your Comments </h2>}
             options={emailOptions}
             selectedValue={storySetting}
             onChange={handleStorySettingChange}
           />
-        )}
-      </div>
-
+        )}{" "}
+      </div>{" "}
       <h2 className="mt-[25px]">
-        <strong>Comments</strong>
-      </h2>
+        <strong> Comments </strong>{" "}
+      </h2>{" "}
       <div className="mb-[10px] mt-[5px]">
         <div
           className="ml-[1px] cursor-pointer"
@@ -164,20 +168,20 @@ const Interactions = () => {
             )
           }
         >
-          <p>Edit my comment settings</p>
-        </div>
+          <p> Edit my comment settings </p>{" "}
+        </div>{" "}
         {commentSetting !== null && (
           <RadioGroup
-            label={<h2>Who can see your Comments</h2>}
+            label={<h2> Who can see your Comments </h2>}
             options={emailOptions}
             selectedValue={commentSetting}
             onChange={handleCommentSettingChange}
           />
-        )}
-      </div>
+        )}{" "}
+      </div>{" "}
       <h2 className="mt-[25px]">
-        <strong>Mentions</strong>
-      </h2>
+        <strong> Mentions </strong>{" "}
+      </h2>{" "}
       <div className="mb-3 mt-[5px]">
         <div
           className="ml-[1px] cursor-pointer"
@@ -188,17 +192,17 @@ const Interactions = () => {
             )
           }
         >
-          <p>Edit my mentions settings</p>
-        </div>
+          <p> Edit my mentions settings </p>{" "}
+        </div>{" "}
         {mentionsSetting !== null && (
           <RadioGroup
-            label={<h2>Who can mention you in Story</h2>}
+            label={<h2> Who can mention you in Story </h2>}
             options={emailOptions}
             selectedValue={mentionsSetting}
             onChange={handleMentionSettingChange}
           />
-        )}
-      </div>
+        )}{" "}
+      </div>{" "}
     </div>
   );
 };

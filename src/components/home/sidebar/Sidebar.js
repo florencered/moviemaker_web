@@ -110,7 +110,8 @@ function Sidebar(props) {
           {" "}
           <img
             class="h-8 w-8 rounded-full"
-            src="https://picsum.photos/id/1027/150/150" alt="image of the user"
+            src="https://picsum.photos/id/1027/150/150"
+            alt="of the user"
           />{" "}
           My Profile{" "}
         </div>{" "}
@@ -132,7 +133,7 @@ function Sidebar(props) {
           more
         </div>{" "}
       </a>{" "}
-      {isBoxVisible && <Box />} 
+      {isBoxVisible && <Box />}{" "}
       <a href="/">
         {" "}
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">
@@ -147,4 +148,4 @@ function Sidebar(props) {
   );
 }
 
-export default Sidebar;
+    export default Sidebar;

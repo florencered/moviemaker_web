@@ -87,15 +87,15 @@ function Security1() {
   };
 
   return (
-    <div className="ml-20 w-[400px] mt-[50px] text-left">
+    <div className="ml-20 mt-[50px] text-left box-content w-[1000px] bg-[#e0d59a]">
       <div className="mb-5">
         <button className="relative pr-24" onClick={togglePassword}>
           <strong>Password</strong>
           <span className="absolute right-3 ">
             {passwordVisible ? (
-              <img src="images/v2.png" />
+              <img src="/images/v2.png" alt="React Logo" />
             ) : (
-              <img src="images/v1.png" />
+              <img src="/images/v1.png" alt="React Logo" />
             )}
           </span>
         </button>
@@ -123,9 +123,9 @@ function Security1() {
           <strong>2 Factor Authentication</strong>
           <span className="absolute right-3 ">
             {twoFactorVisible ? (
-              <img src="images/v2.png" />
+              <img src="/images/v2.png" alt="React Logo" />
             ) : (
-              <img src="images/v1.png" />
+              <img src="/images/v1.png" alt="React Logo" />
             )}
           </span>
         </button>
@@ -148,9 +148,9 @@ function Security1() {
           <strong>Saved login info</strong>
           <span className="absolute right-3 ">
             {savedLoginVisible ? (
-              <img src="images/v2.png" />
+              <img src="/images/v2.png" alt="React Logo" />
             ) : (
-              <img src="images/v1.png" />
+              <img src="/images/v1.png" alt="React Logo" />
             )}
           </span>
         </button>
@@ -168,9 +168,9 @@ function Security1() {
           <strong>Login Activity</strong>
           <span className="absolute right-3 ">
             {loginActivityVisible ? (
-              <img src="images/v2.png" />
+              <img src="/images/v2.png" alt="React Logo" />
             ) : (
-              <img src="images/v1.png" />
+              <img src="/images/v1.png" alt="React Logo" />
             )}
           </span>
         </button>
@@ -179,7 +179,7 @@ function Security1() {
             <p className="4">Where You’re logged in</p>
             <div>
               <img
-                src="images/location icon.png"
+                src="/images/location icon.png"
                 alt="Icon"
                 className="w-5 h-8  mr-[12px]"
               />
@@ -191,7 +191,7 @@ function Security1() {
             </div>
             <div>
               <img
-                src="images/location icon.png"
+                src="/images/location icon.png"
                 alt="Icon"
                 className="w-5 h-8  mr-[12px]"
               />
@@ -202,7 +202,7 @@ function Security1() {
               </p>
             </div>
             <img
-              src="images/location icon.png"
+              src="/images/location icon.png"
               alt="Icon"
               className="w-5 h-8  mr-[12px]"
             />
@@ -219,9 +219,9 @@ function Security1() {
           <strong>Emails from Flixdin</strong>
           <span className="absolute right-3 ">
             {emailsVisible ? (
-              <img src="images/v2.png" />
+              <img src="/images/v2.png" alt="React Logo" />
             ) : (
-              <img src="images/v1.png" />
+              <img src="/images/v1.png" alt="React Logo" />
             )}
           </span>
         </button>

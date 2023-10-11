@@ -2,8 +2,8 @@ import React from "react";
 import DomainMain from "./DomainMain";
 import "./Domain.css";
 import Nav from "../../sidebar/Sidebar";
-import Profile from "../../cards/Card1";
-import ProfileList from "../../cards/Card2";
+import Profile from "../../cards/CardMain1";
+import ProfileList from "../../cards/CardMain2";
 const Domainpage = () => {
   return (
     <div className="bg-dc ">

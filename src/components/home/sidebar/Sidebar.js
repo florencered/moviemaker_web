@@ -11,6 +11,7 @@ import { FaList } from "react-icons/fa6";
 import { VscSignOut } from "react-icons/vsc";
 import Create from "../../create/Create";
 import { useState } from "react";
+import Box from "./box1";
 
 function Sidebar(props) {
   const [modal, setModal] = useState(false);
@@ -18,6 +19,13 @@ function Sidebar(props) {
     e.preventDefault();
     setModal(!modal);
   };
+
+  const [isBoxVisible, setIsBoxVisible] = useState(false);
+  const toggleBox = (e) => {
+    e.preventDefault();
+    setIsBoxVisible(!isBoxVisible);
+  };
+
   return (
     <>
       <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-1 pt-1 mr-2">
@@ -71,7 +79,7 @@ function Sidebar(props) {
           Flicks{" "}
         </div>{" "}
       </a>{" "}
-      <a href="/">
+      <a href="/message">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaMessage size="1.5rem" class="ml-5">
             {" "}
@@ -102,7 +110,8 @@ function Sidebar(props) {
           {" "}
           <img
             class="h-8 w-8 rounded-full"
-            src="https://picsum.photos/id/1027/150/150" alt="image of the user"
+            src="https://picsum.photos/id/1027/150/150"
+            alt="of the user"
           />{" "}
           My Profile{" "}
         </div>{" "}
@@ -116,14 +125,15 @@ function Sidebar(props) {
           About Us
         </div>{" "}
       </a>{" "}
-      <a href="/">
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
-          <FaList size="1.5rem" class="ml-5">
+      <a href="/more" onClick={toggleBox}>
+        <div className="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
+          <FaList size="1.5rem" className="ml-5">
             {" "}
           </FaList>{" "}
-          More
+          more
         </div>{" "}
       </a>{" "}
+      {isBoxVisible && <Box />}{" "}
       <a href="/">
         {" "}
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">
@@ -138,4 +148,4 @@ function Sidebar(props) {
   );
 }
 
-export default Sidebar;
+    export default Sidebar;

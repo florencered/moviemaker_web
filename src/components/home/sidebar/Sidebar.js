@@ -71,7 +71,7 @@ function Sidebar(props) {
           Connection Calls{" "}
         </div>{" "}
       </a>{" "}
-      <a href="/">
+      <a href="/flicks">
         <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold">
           <FaSquareYoutube size="1.5rem" class="ml-5">
             {" "}

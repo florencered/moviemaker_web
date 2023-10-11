@@ -25,7 +25,7 @@ const NewPost = ({ handleClick1 }) => {
                 className="w-12 h-12 shrink-0 rounded-full"
               />
               <input
-                className="flex flex-col flex-shrink-0 ml-5 placeholder:font-light placeholder:text-[#000] text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent"
+                className="flex border-none flex-col flex-shrink-0 ml-5 placeholder:font-light placeholder:text-[#000] text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent outline-none"
                 placeholder="Write a caption..."
               ></input>
             </div>
@@ -35,19 +35,19 @@ const NewPost = ({ handleClick1 }) => {
               className="w-12 h-12 shrink-0"
             />
           </div>
-          <div className="w-full h-px bg-[#978839] my-4"></div>
+          <div className="w-full h-px bg-[#978839] my-2"></div>
           <input
             type="text"
             placeholder="Tag people"
-            className="flex flex-col flex-shrink-0 ml-5 text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
+            className="flex flex-col outline-none focus:border-none border-none flex-shrink-0 ml-5 text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
           />
           <div className="w-full h-px bg-[#978839] my-4"></div>
           <input
             type="text"
             placeholder="Add music"
-            className="flex flex-col flex-shrink-0 ml-5  text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
+            className="flex flex-col border-none flex-shrink-0 ml-5  text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
           />
-          <div className="w-full h-px bg-[#978839] my-4"></div>
+          <div className="w-full h-px bg-[#978839] my-2"></div>
           <div className="w-full flex">
             <div className="w-2/3 h-9 shrink-0 bg-[#C6B34E] rounded-md"></div>
             <div className="w-1/3 h-9 ml-2 shrink-0 bg-gradient-to-r from-[#C6B34E] to-transparent rounded-md"></div>
@@ -55,7 +55,7 @@ const NewPost = ({ handleClick1 }) => {
           <div className="flex justify-between mt-4">
             <div
               type="text"
-              className="flex flex-col flex-shrink-0 ml-5  text-xl font-inter not-italic font-normal leading-normal text-[#5B4E07]"
+              className="flex flex-col ml-5  text-xl font-inter not-italic font-normal leading-normal text-[#5B4E07] border-none bg-transparent"
             >
               Post to other instagram accounts
             </div>
@@ -67,13 +67,13 @@ const NewPost = ({ handleClick1 }) => {
             />
           </div>
 
-          <div className="w-full h-px bg-[#978839] my-4"></div>
+          <div className="w-full h-px bg-[#978839] my-2"></div>
           <input
             type="text"
             placeholder="someone_ig"
-            className="flex flex-col flex-shrink-0 ml-5 text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
+            className="flex flex-col border-none flex-shrink-0 ml-5 text-xl font-inter not-italic font-medium leading-normal w-full appearance-none focus:outline-none bg-transparent placeholder:text-[#5B4E07] placeholder:font-light"
           />
-          <div className="w-full h-px bg-[#978839] my-4"></div>
+          <div className="w-full h-px bg-[#978839] my-2"></div>
           <div className="text-[#978839] text-left text-base font-inter not-italic font-light leading-normal m-2">
             Also post to
           </div>
@@ -103,7 +103,7 @@ const NewPost = ({ handleClick1 }) => {
           </div>
 
           <a
-            href=""
+            href="/"
             className="text-[#5B4E07] text-left text-xl font-inter not-italic font-light leading-normal"
           >
             Advanced settings

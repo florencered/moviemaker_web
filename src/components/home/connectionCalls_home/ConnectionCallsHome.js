@@ -30,7 +30,7 @@ function ConnectionCalls_home() {
 
   return (
     <>
-      <div class="p-4 rounded-2xl ml-28">
+      <div class="p-4 rounded-2xl ml-8">
         <div class=" bg-[#F7EAA9] border rounded-2xl max-w-md">
           <div class="flex items-center px-4 py-3">
             <img

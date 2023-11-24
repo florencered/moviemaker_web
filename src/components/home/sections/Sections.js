@@ -12,7 +12,7 @@ function Section({ isClicked, toggleDropdown }) {
     <>
       <div className="flex lg:flex-row md:flex-col sm:flex-col items-center">
         <div className="flex md:flex-col sm:flex-col pb-3 pt-3 ">
-          <div class="flex flex-row mt-4 space-x-6 ml-32">
+          <div class="flex flex-row mt-4 space-x-6 ml-12 mr-12">
             <button>
               <div class="bg-[#A6A5A2] font-sans font-semibold hover:bg-[#E7DA95] focus:bg-[#E7DA95] active:bg-[#E7DA95] rounded-lg px-3 py-1 items-center">
                 All{" "}

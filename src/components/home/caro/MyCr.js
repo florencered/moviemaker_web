@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
 function MyCr() {
+
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    // Add an event listener to track screen size changes
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+    };
+
+    // Initial check for screen size when the component mounts
+    handleResize();
+
+    // Attach the event listener to the window
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
         
 
-  <ul class="flex space-x-2 justify-between ml-32 mr-16">
-    <li class="flex flex-col items-center space-y-1 ">
+  <ul class="flex space-x-1 justify-center ">
+    <li class="flex flex-col items-center space-y-1">
       <div class="relative bg-[#C6B34E] p-0.5 rounded-full">
         <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
           <img class="w-16 h-16 rounded-full" src="https://placekitten.com/200/200" alt="cute kitty"/>
@@ -19,7 +43,7 @@ function MyCr() {
       <a href="#" class="text-sm">kitty_one</a>
     </li>
 
-    <li class="flex flex-col items-center space-y-1 ">
+    <li class="flex flex-col items-center space-y-1 px-2">
       <div class="relative bg-[#C6B34E] p-0.5 rounded-full">
         <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
           <img class="w-16 h-16 rounded-full" src="https://placekitten.com/200/200" alt="cute kitty"/>
@@ -32,7 +56,7 @@ function MyCr() {
       <a href="#" class="text-sm">kitty_two</a>
     </li>
 
-    <li class="flex flex-col items-center space-y-1 ">
+    <li class="flex flex-col items-center space-y-1 px-2">
       <div class="bg-[#C6B34E] p-0.5 rounded-full">
         <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
           <img class="w-16 h-16 rounded-full" src="https://placekitten.com/200/203" alt="cute kitty"/>
@@ -42,7 +66,7 @@ function MyCr() {
       <a href="#" class="text-sm">kitty_three</a>
     </li>
 
-    <li class="flex flex-col items-center space-y-1 ">
+    <li class="flex flex-col items-center space-y-1 pl-2">
       <div class="bg-[#C6B34E] p-0.5 rounded-full">
         <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
           <img class="w-16 h-16 rounded-full" src="https://placekitten.com/202/201" alt="cute kitty"/>
@@ -52,7 +76,9 @@ function MyCr() {
       <a href="#" class="text-sm">kitty_four</a>
     </li>
 
-    <li class="flex flex-col items-center space-y-1 ">
+    {!isHidden && (
+
+    <li class="flex flex-col items-center space-y-1 pl-2 pr-16">
       <div class="bg-[#C6B34E] p-0.5 rounded-full">
         <a href="#" class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
           <img class="w-16 h-16 rounded-full" src="https://placekitten.com/202/201" alt="cute kitty"/>
@@ -60,7 +86,7 @@ function MyCr() {
       </div>
 
       <a href="#" class="text-sm">kitty_five</a>
-    </li>
+    </li>)}
 
   </ul>
 

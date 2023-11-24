@@ -27,7 +27,7 @@ import Flicks from "./components/flicks/flicks";
 
 function App() {
   return (
-    <div className="App bg-[#FFFADD]">
+    <div className="App bg-[#F7EAA9]">
       <BrowserRouter>
         <Routes>
           <Route path="/intro" element={<Intro/>}/>

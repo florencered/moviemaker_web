@@ -1,0 +1,4 @@
+.sidebar-container {
+    height: 115vh; /* Set a fixed height, adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }

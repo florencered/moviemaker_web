@@ -23,7 +23,7 @@ function Post({ id }) {
   const user = TypeContent.find((user) => user.id === id);
 
   return (
-    <div className="p-4 rounded-2xl  ml-28">
+    <div className="p-4 rounded-2xl  ml-8">
       <div className="flex flex-col  rounded-2xl max-w-md">
         <div
           key={user.id}

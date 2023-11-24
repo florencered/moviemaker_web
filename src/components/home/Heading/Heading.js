@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from "react";
+import Nav from "../sidebar/Sidebar";
 
-function Heading() {
+function Heading(param) {
+  const [showComponent, setShowComponent] = useState(false);
+
+  const toggleComponent = () => {
+    setShowComponent(!showComponent);
+  };
     return (
+      <>
       <div>
-        <h1 class="text-5xl font-bold text-[#C1AD42] flex ml-32 mt-4">
+        <button onClick={toggleComponent} class="text-5xl font-bold text-[#C1AD42] flex ml-12 mt-4">
           {" "}
-          Home{" "}
-        </h1>{" "}
-      </div>
+          {param.param1}{" "}
+        </button>{" "}
+        {showComponent && <Nav />}
+      </div> 
+      </>
     );
 }
 

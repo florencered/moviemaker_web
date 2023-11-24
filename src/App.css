@@ -37,7 +37,7 @@
 
 
 .App {
-    @apply bg-[#C6B34E] bg-opacity-[22%] max-h-full
+    @apply bg-[#C6B34E] bg-opacity-[22%] max-h-full max-w-full
 }
 
 .menubar{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaClapperboard } from "react-icons/fa6";
@@ -13,7 +13,9 @@ import Create from "../../create/Create";
 import { useState } from "react";
 import Box from "./box1";
 
-function Sidebar(props) {
+import '../responsive.css';
+
+function Sidebar(myprop) {
   const [modal, setModal] = useState(false);
   const handleCreate = (e) => {
     e.preventDefault();
@@ -26,14 +28,34 @@ function Sidebar(props) {
     setIsBoxVisible(!isBoxVisible);
   };
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 2000) { // Adjust the threshold as needed
+        setIsVisible(true);
+      } else {
+        setIsVisible(true);
+      }
+    }
+
+     // Add an event listener to the window resize event
+     window.addEventListener('resize', handleResize);
+
+     // Clean up the event listener when the component unmounts
+     return () => {
+       window.removeEventListener('resize', handleResize);
+     };
+   }, []); // Empty dependency array means this effect runs once after mount
+
   return (
-    <>
-      <div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-1 pt-1 mr-2">
-        <div
+    <div>
+       {!myprop.myprop &&isVisible && (<div class="flex flex-col justify-center items-center align-middle bg-black h-10 w-64 mt-8 rounded-3xl ml-1 pt-1 mr-0">
+       <div
           class="text-center flex ml-12"
           style={{ alignItems: "center", width: "150px", height: "200px" }}
         >
-          <div>
+         <div>
             <img
               class="h-8 w-8 mb-1.5 rounded-full"
               src="/images/flix_Logo.svg"
@@ -46,13 +68,13 @@ function Sidebar(props) {
             </h4>{" "}
           </div>{" "}
         </div>{" "}
-      </div>{" "}
+      </div>)}{" "}
       <a href="/home">
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-10 p-2 hover:bg-white font-semibold">
+        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-4 p-2 hover:bg-white font-semibold">
           <FaHome size="1.5rem" class="ml-5">
             {" "}
           </FaHome>{" "}
-          Home{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Home{" "}
         </div>{" "}
       </a>{" "}
       <a href="/explore">
@@ -60,7 +82,7 @@ function Sidebar(props) {
           <FaSearch size="1.5rem" class="ml-5">
             {" "}
           </FaSearch>{" "}
-          Explore{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Explore{" "}
         </div>{" "}
       </a>{" "}
       <a href="/connectionCalls">
@@ -68,7 +90,7 @@ function Sidebar(props) {
           <FaClapperboard size="1.5rem" class="ml-5 mt-1">
             {" "}
           </FaClapperboard>{" "}
-          Connection Calls{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Connection Calls{" "}
         </div>{" "}
       </a>{" "}
       <a href="/">
@@ -76,7 +98,7 @@ function Sidebar(props) {
           <FaSquareYoutube size="1.5rem" class="ml-5">
             {" "}
           </FaSquareYoutube>{" "}
-          Flicks{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Flicks{" "}
         </div>{" "}
       </a>{" "}
       <a href="/message">
@@ -84,7 +106,7 @@ function Sidebar(props) {
           <FaMessage size="1.5rem" class="ml-5">
             {" "}
           </FaMessage>{" "}
-          Messages{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Messages{" "}
         </div>{" "}
       </a>{" "}
       <a href="/notifications">
@@ -92,7 +114,7 @@ function Sidebar(props) {
           <FaBell size="1.5rem" class="ml-5">
             {" "}
           </FaBell>{" "}
-          Notifications{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Notifications{" "}
         </div>{" "}
       </a>{" "}
       <a href="/" onClick={handleCreate}>
@@ -100,7 +122,7 @@ function Sidebar(props) {
           <FaSquarePlus size="1.5rem" class="ml-5">
             {" "}
           </FaSquarePlus>{" "}
-          Create{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;Create{" "}
         </div>{" "}
       </a>{" "}
       {modal && <Create handleCreate={handleCreate} />}{" "}
@@ -112,16 +134,16 @@ function Sidebar(props) {
             class="h-8 w-8 rounded-full"
             src="https://picsum.photos/id/1027/150/150" alt="image of the user"
           />{" "}
-          My Profile{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;My Profile{" "}
         </div>{" "}
       </a>{" "}
       <a href="/aboutUs">
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-10 p-2 hover:bg-white font-semibold">
+        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-5 p-2 hover:bg-white font-semibold">
           <BsFillInfoCircleFill
             size="1.5rem"
             class="ml-5"
           ></BsFillInfoCircleFill>{" "}
-          About Us
+          &nbsp;&nbsp;&nbsp;&nbsp;About Us
         </div>{" "}
       </a>{" "}
       <a href="/more" onClick={toggleBox}>
@@ -129,21 +151,21 @@ function Sidebar(props) {
           <FaList size="1.5rem" className="ml-5">
             {" "}
           </FaList>{" "}
-          more
+          &nbsp;&nbsp;&nbsp;&nbsp;more
         </div>{" "}
       </a>{" "}
       {isBoxVisible && <Box />} 
       <a href="/">
         {" "}
-        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 mb-3 p-2 hover:bg-white font-semibold">
-          {" "}
+        <div class="flex flex-row rounded-lg ml-10 mr-10 mt-1 p-2 hover:bg-white font-semibold mb-3">
+          {" "}&nbsp;&nbsp;&nbsp;&nbsp;
           <span style={{ transform: "scaleX(-1)" }}>
             <VscSignOut size="1.5rem" className="ml-5" color="red" />
           </span>
           Log out
         </div>{" "}
       </a>{" "}
-    </>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import Nav from "../home/sidebar/sidebar.js";
 import Comment from "./Comment.js";
 
-const CommentPage = () => {
+const w = () => {
   return (
     <div className="flex">
       <div class="rounded-lg bg-[#F7EAA9] rounded-r-2xl mb-2 pb-3 w-1/5 h-fit">
@@ -57,7 +57,7 @@ const CommentPage = () => {
           <div className="flex pt-3 border-b-2 border-[#978839]">
             <div className=" hover:border-b-4 border-b-[#FFFADD] border-b-4 hover:border-b-[#978839] ">
               <img
-                src="/images/images/4.png"
+                src="images/profilephoto.jpeg"
                 className="w-6 mx-20 pb-6"
                 alt=""
               />

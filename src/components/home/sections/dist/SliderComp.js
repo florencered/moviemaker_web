@@ -19,7 +19,7 @@ function valuetext(value) {
 
 export default function Radius() {
   return (
-    <Box sx={{ width: 670, height: 139 }}>
+    <Box sx={{ width: { lg: 500, md: 450, sm:300, xs:380 } }}>
       <div className="bg-[#F7EAA9] p-10 rounded-xl shadow-slate-500 shadow-md">
         <Slider
           sx={{

@@ -36,7 +36,7 @@ const RadioButtons = ({ selectedValue }) => {
         {types.map((type) => (
           <label
             key={type.id}
-            className="flex mt-1 justify-between px-3 cursor-pointer"
+            className="font-semibold flex mt-1 justify-between px-3 cursor-pointer"
           >
             <span className=""> {type.name} </span>{" "}
             <input

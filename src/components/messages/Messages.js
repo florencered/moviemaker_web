@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Card from "../home/sections/dist/DynamicCards";
 import SideBar from "../home/sidebar/Sidebar";
 import { BsFillCameraVideoFill } from 'react-icons/bs';
 import { BsFillTelephoneFill } from 'react-icons/bs';

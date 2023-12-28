@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../home/sections/dist/DynamicCards";
 import SideBar from "../home/sidebar/Sidebar";
 import More1 from "./more1";
 

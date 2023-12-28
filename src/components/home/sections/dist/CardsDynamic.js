@@ -1,9 +1,12 @@
+
 import { useState, useEffect } from "react";
 import { SlOptionsVertical } from "react-icons/sl";
 import { CiMapPin } from "react-icons/ci";
 import { AiFillPlusCircle } from "react-icons/ai";
 
 export default function Card() {
+
+  // state and handlers
   const [isLiked, setIsLiked] = useState(false);
   const [isMarked, setIsMarked] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -37,15 +40,20 @@ export default function Card() {
       });
   }, []);
 
+
   return (
-    <>
-      <div className="grid lg:grid-cols-2 grid-rows-2 gap-x-16 gap-y-3 sm:grid-cols-1 md:grid-cols-1 shrink-1  pt-3">
+    <div className="max-w-7xl mx-auto">
+      
+      <div className="grid lg:grid-cols-2 grid-rows-2 gap-x-16 gap-y-3 sm:grid-cols-1 md:grid-cols-2">
+
+        {/* loop through cards */}
         {items.slice(0, 6).map((item) => (
-          <div className=" flex shrink-1">
-            <div className="rounded-xl w-[550px] h-auto	text-black font-sans p-5 bg-[#FFF3B5] ">
-              <div className="flex flex-row justify-between items-center">
-                <div className="p-1 flex flex-row space-x-3 items-center">
-                  <div className="avatar">
+
+        <div className="rounded-xl sm:w-full h-auto text-black font-sans p-5 bg-[#FFF3B5]">
+
+          <div className="flex flex-row justify-between items-center">
+            {/* avatar and name */}
+            <div className="avatar">
                     <img
                       className="w-16 rounded-full"
                       src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg"
@@ -56,41 +64,58 @@ export default function Card() {
                     <h1 className="font-bold">{item.name}</h1>
                     <sub className="font-semibold pt-0">Director</sub>
                   </div>
-                </div>
-                <div>
-                  <button>
-                    <SlOptionsVertical size="1.2rem" />
-                  </button>
-                </div>
-              </div>
-              <div className="space-y-3 space-x-3 pt-3">
-                <div className="flex flex-row justify-center space-x-10 font-bold font-sans">
-                  <button className="focus:bg-[#FFFADD] rounded-lg p-1 px-3 hover:bg-[#FFFADD]  active:bg-[#FFFADD]">
-                    Need
-                  </button>
-                  <button className="focus:bg-[#FFFADD] rounded-lg p-1 px-3 hover:bg-[#FFFADD]  active:bg-[#FFFADD]">
-                    Cinematography
-                  </button>
-                  <button className="focus:bg-[#FFFADD] rounded-lg p-1 px-3 hover:bg-[#FFFADD]  active:bg-[#FFFADD]">
-                    Connection
-                  </button>
-                </div>
-                <div className="flex flex-row  space-x-3 pt-2 px-1 items-center pb-5">
-                  <CiMapPin size="1.5rem" />
-                  <input
-                    type="text"
-                    className="rounded-2xl w-full px-4 py-1.25 font-sans bg-[#FFFADD] focus:outline-[#C6B34E] p-1"
-                  />
-                </div>
-              </div>
-              <div class="flex ml-60 text-sm font-semibold">
-                number of applicants: 18
-              </div>
-              <div className="pt-5">
-                <div class="flex items-center justify-between mx-4 mt-3 mb-2">
-                  <div class="flex gap-5">
-                    <button className="transparent-button" onClick={likeButton}>
-                      <svg
+            <button>
+              <SlOptionsVertical size="1.2rem" /> 
+            </button>
+          </div>
+
+          <div className="pt-1 space-y-3 sm:space-y-0 sm:space-x-3 sm:flex-row">
+
+            {/* category buttons  */}
+            <div className="flex flex-wrap justify-center space-x-2 sm:space-x-1 md:space-x-1 font-bold">
+              <button 
+                className="flex-1 mb-2 sm:mb-0 focus:bg-[#FFFADD] rounded-lg p-1 px-2 sm:px-3 hover:bg-[#FFFADD] active:bg-[#FFFADD] text-sm sm:text-base md:text-base">
+                Need
+              </button>
+              <button
+                className="flex-1 mb-2 sm:mb-0 focus:bg-[#FFFADD] rounded-lg p-1 px-2 sm:px-3 hover:bg-[#FFFADD] active:bg-[#FFFADD] text-sm sm:text-base md:text-base">
+                Cinematography 
+              </button>
+              <button
+                className="flex-1 mb-2 sm:mb-0 focus:bg-[#FFFADD] rounded-lg p-1 px-2 sm:px-3 hover:bg-[#FFFADD] active:bg-[#FFFADD] text-sm sm:text-base md:text-base">
+                Connection
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-row space-x-3 pt-2 px-1 items-center pb-5">
+            
+            {/* // location pin */}
+            <div className="flex flex-row w-full sm:flex-row items-start space-y-2 sm:space-y-0 sm:space-x-3 pt-2 px-1 pb-5">
+              <CiMapPin 
+                size="2rem"
+                className="" 
+              />
+              <input
+                type="text"
+                className="rounded-2xl w-full px-4 font-sans bg-[#FFFADD] focus:outline-[#C6B34E] p-1"
+              />
+            </div>
+
+          </div>
+
+          {/* // applicants count */}
+          <div className="text-sm sm:text-base font-semibold text-right sm:text-center ">
+            Number of applicants: 18
+          </div>
+
+          <div className="pt-5">
+            <div className="flex justify-between mx-4 mt-3 mb-2">
+              
+              {/* // action buttons */}
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <button className="transparent-button" onClick={likeButton}>
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="28"
                         height="28"
@@ -101,11 +126,12 @@ export default function Card() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         className="feather feather-heart"
-                      >
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                      </svg>
-                    </button>
-                    <button
+                    >
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                  </button>
+
+                  <button
                       className="transparent-button"
                       onClick={handleModalOpen}
                     >
@@ -123,8 +149,9 @@ export default function Card() {
                       >
                         <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                       </svg>
-                    </button>
-                    <button className="transparent-button">
+                  </button>
+
+                  <button className="transparent-button">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="28"
@@ -140,9 +167,9 @@ export default function Card() {
                         <line x1="22" y1="2" x2="11" y2="13" />
                         <polygon points="22 2 15 22 11 13 2 9 22 2" />
                       </svg>
-                    </button>
-                  </div>
-                  <div class="flex items-center space-x-3">
+                  </button>
+              </div>
+              <div class="flex items-center space-x-3">
                     <button class="bg-[#C6B34E] focus:bg-[#FFFADD] rounded-lg p-1 px-3 hover:bg-[#FFFADD]  active:bg-[#FFFADD] font-bold">
                       Apply
                     </button>
@@ -166,18 +193,19 @@ export default function Card() {
                       </svg>
                     </button>
                   </div>
-                </div>
-              </div>
+
             </div>
+
           </div>
+
+        </div>
         ))}
       </div>
-      <div className="">
-        <button className="relative bottom-16 lg:left-[1130px] h-32 w-32 md:left-[515px] sm:left-[415px]">
-          {" "}
-          <AiFillPlusCircle style={iconStyles} size={70} />{" "}
-        </button>{" "}
-      </div>
-    </>
-  );
+
+      <button className="relative lg:bottom-8 lg:left-[770px] md:left-[683px] md:bottom-9">
+        <AiFillPlusCircle style={iconStyles} size={70} />
+      </button>
+    </div>
+  )
+
 }

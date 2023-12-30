@@ -1,5 +1,5 @@
 // import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Nav from "./sidebar/Sidebar";
 // import Heading from "./Heading/Heading";
 import Post from "./connectionCalls_home/ConnectionCallsHome";
@@ -10,11 +10,11 @@ import useButtonGroup from "./sections/domain/UseButton";
 // import RadioButtons from "./sections/domain/RadioButtons";
 import Sections from "./sections/Sections";
 import PostMain from "./sections/domain/PostMain";
-import Footer from "./footer/Footer"
+import Footer from "./footer/Footer";
 import { FaMessage } from "react-icons/fa6";
 import { FaSquarePlus } from "react-icons/fa6";
-import './responsive.css';
-import Modal from './sidebar/Modal'; // Create a Modal component
+import "./responsive.css";
+import Modal from "./sidebar/Modal"; // Create a Modal component
 
 function Home() {
   const [isOpen, isClicked, toggleDropdown] = useButtonGroup();
@@ -26,8 +26,6 @@ function Home() {
     e.preventDefault();
     setModal(!modal);
   };
-
-  
 
   useEffect(() => {
     // Add an event listener to track screen size changes
@@ -43,11 +41,11 @@ function Home() {
     handleResize();
 
     // Attach the event listener to the window
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -78,36 +76,34 @@ function Home() {
     setShowComponent(showComponent);
   };
 
-  
-    const [isNavOpen, setIsNavOpen] = useState(false);
-  
-    const toggleNav = () => {
-      setIsNavOpen(!isNavOpen);
-      setShowComponent(showComponent);
-    };
-  
-  
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+    setShowComponent(showComponent);
+  };
 
   return (
     <>
-      <div className="App flex flex-row justify-center min-w-fit bg-[#F7EAA9]">
-      {!isHidden && (
-        <div class="basis-1/4 rounded-r-3xl sidebar-container min-w-fit bg-[#F7EAA9]">
-          <Nav> </Nav>{" "}
-        </div>)}{" "}
-        <div class="h-max md:basis-1/2 space-y-2 relative bg-[#E8E1BA]">
+      <div className="App flex flex-row justify-center items-centre  min-w-fit bg-[#F7EAA9]">
+        {!isHidden && (
+          <div class="basis-1/4 rounded-r-3xl sidebar-container min-w-fit bg-[#F7EAA9]">
+            <Nav> </Nav>{" "}
+          </div>
+        )}{" "}
+        <div class="h-max md:basis-1/2 space-y-2 relative bg-[#E8E1BA] items-start   ">
           {/* <Heading param1={content}> </Heading>  */}
-         
-          <div className = "flex flex-row"><button onClick={toggleNav} class="text-5xl font-bold text-[#C1AD42] flex ml-12 mt-4">
-          {" "}
-          {content}{" "}
-        </button>{" "} 
 
-        
-        
-        {/* {!isHidden && <Footer />} */}
-      
-      {/* { !showComponent && isHidden && (<div class="flex flex-row mt-8 ml-48">
+          <div className="flex flex-column">
+            <button
+              onClick={toggleNav}
+              class="text-5xl font-bold text-[#C1AD42] flex ml-12 mt-4"
+            >
+              {" "}
+              {content}{" "}
+            </button>{" "}
+            {/* {!isHidden && <Footer />} */}
+            {/* { !showComponent && isHidden && (<div class="flex flex-row mt-8 ml-48">
         <div className="mr-7">
       <a href="/" onClick={handleCreate}>
         <div class="flex flex-row rounded-lg hover:bg-white font-semibold">
@@ -125,27 +121,28 @@ function Home() {
 
         </div>{" "}
       </a></div></div>)} */}
-      </div>
-      {isNavOpen && isHidden &&(
-        <Modal class= "ml-0" closeModal={toggleNav}>
-          <Nav myprop={!showComponent}/>
-        </Modal>
-      )}
-      {isHidden && showComponent && <Nav myprop={!showComponent}/>}
-        {isHidden && !showComponent && <Sections/>}
-        {isHidden && !showComponent && <Carousel/>}
-        {isHidden && !showComponent && <Post/>}
-        {isHidden && !showComponent && <PostMain/>}
-        {/* {isHidden && !showComponent && <Footer/>} */}
-        {!isHidden && <Sections />}
-        {!isHidden && <Carousel />}
-        {!isHidden && <Post />}
-        {!isHidden && <PostMain />}
+          </div>
+          {isNavOpen && isHidden && (
+            <Modal class="ml-0" closeModal={toggleNav}>
+              <Nav myprop={!showComponent} />
+            </Modal>
+          )}
+          {isHidden && showComponent && <Nav myprop={!showComponent} />}
+          {isHidden && !showComponent && <Sections />}
+          {isHidden && !showComponent && <Carousel />}
+          {isHidden && !showComponent && <Post />}
+          {isHidden && !showComponent && <PostMain />}
+          {/* {isHidden && !showComponent && <Footer/>} */}
+          {!isHidden && <Sections />}
+          {!isHidden && <Carousel />}
+          {!isHidden && <Post />}
+          {!isHidden && <PostMain />}
         </div>{" "}
         {!isHidden && (
-        <div class="basis-1/4 bg-[#E8E1BA]">
-          <Profile> </Profile> <ProfileList> </ProfileList>{" "}
-        </div>)}{" "}
+          <div class="basis-1/4 bg-[#E8E1BA]">
+            <Profile> </Profile> <ProfileList> </ProfileList>{" "}
+          </div>
+        )}{" "}
       </div>{" "}
     </>
   );

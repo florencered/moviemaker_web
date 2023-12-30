@@ -8,6 +8,7 @@ function Section({ isClicked, toggleDropdown }) {
   const [showRadius, setShowRadius] = useState(false);
   const [showDomain, setShowDomain] = useState(false);
   const [showLocation, setShowLocation] = useState(false);
+
   return (
     <>
       <div className="flex lg:flex-row md:flex-col sm:flex-col items-center">
@@ -57,14 +58,11 @@ function Section({ isClicked, toggleDropdown }) {
               </div>{" "}
             </button>{" "}
           </div>{" "}
-          <div className="">
+          <div className="inline-block items-center align-middle  pt-16 absolute px-12 ">
             {" "}
             {showDomain && (
-              <div className="pt-2 flex flex-row ">
-                {" "}
-                <div className="absolute z-50 xs:w-1/4 md:w-3/4 ml-32">
-                  <RadioButton />
-                </div>{" "}
+              <div className=" z-50 items-center  ">
+                <RadioButton />
               </div>
             )}{" "}
           </div>{" "}

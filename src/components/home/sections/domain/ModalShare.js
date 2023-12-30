@@ -9,7 +9,7 @@ const ModalShare = ({ isOpen, onClose }) => {
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Modal"
-      className=" fixed inset-0 absolute flex items-center  w-[32%] align-middle  translate-x-[30rem] h-[55%]  mt-48   justify-center z-50"
+      className="absolute flex items-center  align-middle  w-[30%] max-sm:w-[50%] max-sm:translate-x-1/2 max-md:w-[50%] max-md:translate-x-1/2  max-lg:w-[50%] max-lg:translate-x-1/2    translate-x-[85%] h-[500px] mt-48  justify-center z-50"
       overlayClassName="fixed inset-0 bg-transparent bg-opacity-50"
     >
       <div className="flex h-[100%]  bg-postcol w-[100%] rounded-3xl p-2 text-center">

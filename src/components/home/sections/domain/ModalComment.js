@@ -15,19 +15,19 @@ const ModalComment = ({ isOpen, onClose, id, isLiked, likeButton }) => {
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Modal"
-      className="fixed inset-0 absolute flex items-center w-[65%] align-middle -translate-y-14 h-[80%] bg-postcol translate-x-1/4 mt-32 justify-center z-50"
+      className="fixed inset-0 absolute flex items-center max-lg:w-[65%] max-lg:h-fit w-[60%] h-fit max-sm:w-[60%]  max-md:w-[60%] max-sm:h-fit max-md:h-fit  align-middle max-md:translate-x-1/3  -translate-y-14  bg-postcol translate-x-1/4 mt-32 justify-center z-50"
       overlayClassName="fixed inset-0 bg-transparent bg-opacity-50"
     >
-      <div className="flex items-center justify-center h-[100%]">
+      <div className="flex items-center max-sm:hidden max-md:hidden  justify-center w-[100%] h-[100%] max-lg:h-[100%]">
         <img
           src={user.userimg}
           alt="Image"
           className="h-full w-full object-contain"
         />
       </div>
-      <div className="bg-postcol w-[50%] h-[100%]">
+      <div className="bg-postcol w-[50%] max-lg:w-[50%] max-ld:h-fit max-sm:w-[100%] max-md:w-[100%] max-sm:h-fit max-md:h-fit h-[100%]">
         <div className="flex flex-row items-center border-3 h-20 border-b-2 border-[#C6B34E] mx-2">
-          <div className="bg-[#C6B34E] p-0.5 rounded-full relative top-1">
+          <div className="bg-[#C6B34E] p-0.5 rounded-full relative top-1 block max-sm:hidden max-lg:hidden">
             <a href="#" className="block bg-white p-0.5 rounded-full transform">
               <img
                 className="h-12 w-12 object-cover rounded-full"
@@ -53,7 +53,7 @@ const ModalComment = ({ isOpen, onClose, id, isLiked, likeButton }) => {
           </div>
         </div>
 
-        <div className="scroll-section h-96 mx-2 overflow-y-scroll no-scrollbar border-b-2 border-[#C6B34E]">
+        <div className="scroll-section h-96 max-sm:h-72 mx-2 overflow-y-scroll no-scrollbar border-b-2 border-[#C6B34E]">
           <div className="flex flex-col border-b-2 border-[#C6B34E] mb-4">
             <p className="text-sm py-1">
               <span className="text-sm font-semibold">samrzkhan</span> Lorem

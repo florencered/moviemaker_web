@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const RadioButtons = ({ selectedValue }) => {
+const RadioButtons = ({ selectedValue, Buttonchange }) => {
   const [value, setValue] = useState(selectedValue);
 
   const handleValueChange = (event) => {
@@ -28,7 +28,7 @@ const RadioButtons = ({ selectedValue }) => {
 
   //in the second div make it absolute if you want the domain to overlap
   return (
-    <div className="absolute items-center w-[28rem] z-[10000] display: block;">
+    <div className="absolute  w-[28rem] z-[10000] mr-96  ; ">
       <div className="flex flex-col  bg-radio rounded-lg ">
         <div className="text-black font-medium border-b-2 border-[#b1991e] text-center  border-color:#b1991e">
           Select Domain{" "}

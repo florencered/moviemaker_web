@@ -183,7 +183,12 @@ function Post({ id }) {
             isLiked={isLiked}
             likeButton={likeButton}
           />
-          <ModalShare isOpen={isOpenShare} onClose={toggleModalShare} />
+
+          <div className="flex max-w-fit items-center align-middle absolute ">
+            <div className=" z-50 items-center align-middle4 ">
+              <ModalShare isOpen={isOpenShare} onClose={toggleModalShare} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
